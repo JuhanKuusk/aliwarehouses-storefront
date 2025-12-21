@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Schneller EU-Versand",
+    "loading": "Wird geladen...",
+    "error": "Etwas ist schiefgelaufen",
+    "search": "Suchen",
+    "searchPlaceholder": "Produkte suchen...",
+    "viewAll": "Alle anzeigen",
+    "learnMore": "Mehr erfahren"
+  },
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "collections": "Kollektionen",
+    "cart": "Warenkorb",
+    "account": "Konto"
+  },
+  "categories": {
+    "homeDecor": "Wohndekoration",
+    "lighting": "Beleuchtung",
+    "furniture": "Möbel",
+    "garden": "Garten",
+    "beauty": "Schönheitsprodukte",
+    "beautyEquipment": "Körperpflegegeräte",
+    "solarEnergy": "Erneuerbare Energie",
+    "toys": "Spielzeug",
+    "pets": "Haustiere",
+    "sports": "Sport & Freizeit"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium-Produkte, EU-Lieferung",
+      "subtitle": "Kaufen Sie Qualitätsprodukte aus verifizierten EU-Lagern mit schnellem Versand in ganz Europa",
+      "cta": "Jetzt einkaufen"
+    },
+    "featured": {
+      "title": "Empfohlene Produkte",
+      "subtitle": "Unsere beliebtesten Artikel"
+    },
+    "categories": {
+      "title": "Nach Kategorie einkaufen",
+      "subtitle": "Finden Sie was Sie brauchen"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Schneller EU-Versand",
+        "description": "Lieferung in 3-7 Werktagen"
+      },
+      "quality": {
+        "title": "Qualität garantiert",
+        "description": "Nur verifizierte Lieferanten"
+      },
+      "support": {
+        "title": "EU-Support",
+        "description": "Kundenservice in Ihrer Sprache"
+      },
+      "returns": {
+        "title": "Einfache Rücksendung",
+        "description": "30 Tage Rückgaberecht"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "In den Warenkorb",
+    "buyNow": "Jetzt kaufen",
+    "outOfStock": "Nicht auf Lager",
+    "inStock": "Auf Lager",
+    "description": "Beschreibung",
+    "details": "Details",
+    "reviews": "Bewertungen",
+    "relatedProducts": "Ähnliche Produkte",
+    "shipsFrom": "Versand aus EU",
+    "freeShipping": "Kostenloser Versand ab 75€",
+    "usage": "Verwendung",
+    "specifications": "Technische Daten",
+    "dimensions": "Abmessungen",
+    "packageInfo": "Paketinformationen",
+    "style": "Stil",
+    "material": "Material",
+    "color": "Farbe",
+    "process": "Verarbeitung",
+    "installationType": "Installationsart",
+    "indoorOutdoor": "Innen-/Außenbereich",
+    "productSize": "Produktgröße",
+    "packageSize": "Paketgröße",
+    "weight": "Gewicht",
+    "packageContents": "Paketinhalt",
+    "originCountry": "Herkunftsland",
+    "deliveryTime": "Voraussichtliche Lieferzeit"
+  },
+  "cart": {
+    "title": "Ihr Warenkorb",
+    "empty": "Ihr Warenkorb ist leer",
+    "continueShopping": "Weiter einkaufen",
+    "subtotal": "Zwischensumme",
+    "shipping": "Versand",
+    "total": "Gesamt",
+    "checkout": "Zur Kasse",
+    "remove": "Entfernen",
+    "quantity": "Menge"
+  },
+  "footer": {
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "terms": "AGB",
+    "privacy": "Datenschutz",
+    "shipping": "Versandinfos",
+    "returns": "Rücksendungen",
+    "copyright": "© 2024 AliWarehouses EU. Alle Rechte vorbehalten."
+  }
+}

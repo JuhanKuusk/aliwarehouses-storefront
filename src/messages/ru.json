@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Быстрая доставка по ЕС",
+    "loading": "Загрузка...",
+    "error": "Что-то пошло не так",
+    "search": "Поиск",
+    "searchPlaceholder": "Поиск товаров...",
+    "viewAll": "Смотреть все",
+    "learnMore": "Узнать больше"
+  },
+  "nav": {
+    "home": "Главная",
+    "products": "Товары",
+    "collections": "Коллекции",
+    "cart": "Корзина",
+    "account": "Аккаунт"
+  },
+  "categories": {
+    "homeDecor": "Декор для дома",
+    "lighting": "Освещение",
+    "furniture": "Мебель",
+    "garden": "Сад",
+    "beauty": "Косметика",
+    "beautyEquipment": "Оборудование для ухода за телом",
+    "solarEnergy": "Возобновляемая энергия",
+    "toys": "Игрушки",
+    "pets": "Домашние животные",
+    "sports": "Спорт и отдых"
+  },
+  "home": {
+    "hero": {
+      "title": "Премиум товары, доставка по ЕС",
+      "subtitle": "Покупайте качественные товары с проверенных европейских складов с быстрой доставкой по всей Европе",
+      "cta": "Купить сейчас"
+    },
+    "featured": {
+      "title": "Рекомендуемые товары",
+      "subtitle": "Наши самые популярные товары"
+    },
+    "categories": {
+      "title": "Покупки по категориям",
+      "subtitle": "Найдите то, что вам нужно"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Быстрая доставка по ЕС",
+        "description": "Доставка за 3-7 рабочих дней"
+      },
+      "quality": {
+        "title": "Гарантия качества",
+        "description": "Только проверенные поставщики"
+      },
+      "support": {
+        "title": "Поддержка в ЕС",
+        "description": "Обслуживание на вашем языке"
+      },
+      "returns": {
+        "title": "Легкий возврат",
+        "description": "30-дневная политика возврата"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "В корзину",
+    "buyNow": "Купить сейчас",
+    "outOfStock": "Нет в наличии",
+    "inStock": "В наличии",
+    "description": "Описание",
+    "details": "Детали",
+    "reviews": "Отзывы",
+    "relatedProducts": "Похожие товары",
+    "shipsFrom": "Отправка из ЕС",
+    "freeShipping": "Бесплатная доставка от 75€",
+    "usage": "Применение",
+    "specifications": "Характеристики",
+    "dimensions": "Размеры",
+    "packageInfo": "Информация о упаковке",
+    "style": "Стиль",
+    "material": "Материал",
+    "color": "Цвет",
+    "process": "Обработка",
+    "installationType": "Тип установки",
+    "indoorOutdoor": "Для помещений/улицы",
+    "productSize": "Размер товара",
+    "packageSize": "Размер упаковки",
+    "weight": "Вес",
+    "packageContents": "Комплектация",
+    "originCountry": "Страна происхождения",
+    "deliveryTime": "Ориентировочный срок доставки"
+  },
+  "cart": {
+    "title": "Ваша корзина",
+    "empty": "Ваша корзина пуста",
+    "continueShopping": "Продолжить покупки",
+    "subtotal": "Промежуточный итог",
+    "shipping": "Доставка",
+    "total": "Итого",
+    "checkout": "Оформить заказ",
+    "remove": "Удалить",
+    "quantity": "Количество"
+  },
+  "footer": {
+    "about": "О нас",
+    "contact": "Контакты",
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности",
+    "shipping": "Информация о доставке",
+    "returns": "Возвраты",
+    "copyright": "© 2024 AliWarehouses EU. Все права защищены."
+  }
+}

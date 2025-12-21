@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Fast EU Shipping",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "search": "Search",
+    "searchPlaceholder": "Search products...",
+    "viewAll": "View All",
+    "learnMore": "Learn More"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "collections": "Collections",
+    "cart": "Cart",
+    "account": "Account"
+  },
+  "categories": {
+    "homeDecor": "Home Decor",
+    "lighting": "Lighting",
+    "furniture": "Furniture",
+    "garden": "Garden",
+    "beauty": "Beauty Products",
+    "beautyEquipment": "Body Care Equipment",
+    "solarEnergy": "Renewable Energy",
+    "toys": "Toys",
+    "pets": "Pets",
+    "sports": "Sports & Leisure"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium Products, EU Delivery",
+      "subtitle": "Shop quality products from verified EU warehouses with fast shipping across Europe",
+      "cta": "Shop Now"
+    },
+    "featured": {
+      "title": "Featured Products",
+      "subtitle": "Our most popular items"
+    },
+    "categories": {
+      "title": "Shop by Category",
+      "subtitle": "Find what you need"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Fast EU Shipping",
+        "description": "3-7 business days delivery"
+      },
+      "quality": {
+        "title": "Quality Assured",
+        "description": "Verified suppliers only"
+      },
+      "support": {
+        "title": "EU Support",
+        "description": "Customer service in your language"
+      },
+      "returns": {
+        "title": "Easy Returns",
+        "description": "30-day return policy"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "description": "Description",
+    "details": "Details",
+    "reviews": "Reviews",
+    "relatedProducts": "Related Products",
+    "shipsFrom": "Ships from EU",
+    "freeShipping": "Free shipping over €75",
+    "usage": "Usage",
+    "specifications": "Specifications",
+    "dimensions": "Dimensions",
+    "packageInfo": "Package Information",
+    "style": "Style",
+    "material": "Material",
+    "color": "Color",
+    "process": "Process",
+    "installationType": "Installation Type",
+    "indoorOutdoor": "Indoor/Outdoor",
+    "productSize": "Product Size",
+    "packageSize": "Package Size",
+    "weight": "Weight",
+    "packageContents": "Package Contents",
+    "originCountry": "Country of Origin",
+    "deliveryTime": "Estimated Delivery"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "continueShopping": "Continue Shopping",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "remove": "Remove",
+    "quantity": "Quantity"
+  },
+  "footer": {
+    "about": "About Us",
+    "contact": "Contact",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "shipping": "Shipping Info",
+    "returns": "Returns",
+    "copyright": "© 2024 AliWarehouses EU. All rights reserved."
+  }
+}

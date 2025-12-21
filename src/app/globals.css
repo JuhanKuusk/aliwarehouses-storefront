@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* Light Theme Colors */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --card-bg: #f9fafb;
+  --card-border: #e5e7eb;
+  --muted: #6b7280;
+  --accent: #8b5cf6;
+  --accent-hover: #7c3aed;
+}
+
+/* Dark Theme Colors */
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --card-bg: #111111;
+  --card-border: rgba(255, 255, 255, 0.1);
+  --muted: #9ca3af;
+  --accent: #a855f7;
+  --accent-hover: #9333ea;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Aceternity UI Animations */
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+
+/* Infinite Moving Cards Animation */
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/* Spotlight Animation */
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}
+
+/* Theme Transition */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Light Theme Overrides for specific components */
+.light {
+  /* Header/Navbar */
+  & header {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-color: var(--card-border) !important;
+  }
+
+  /* Cards */
+  & .bg-gray-900 {
+    background-color: var(--card-bg) !important;
+  }
+
+  & .bg-gray-800 {
+    background-color: #f3f4f6 !important;
+  }
+
+  /* Text colors */
+  & .text-white {
+    color: #111827 !important;
+  }
+
+  & .text-gray-400 {
+    color: #6b7280 !important;
+  }
+
+  & .text-gray-300 {
+    color: #4b5563 !important;
+  }
+
+  /* Border colors */
+  & .border-white\/10 {
+    border-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  /* Background black elements */
+  & .bg-black {
+    background-color: #ffffff !important;
+  }
+
+  & .bg-black\/80 {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  & .bg-black\/60 {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  /* Gradient backgrounds */
+  & .from-purple-900\/20 {
+    --tw-gradient-from: rgba(88, 28, 135, 0.1) !important;
+  }
+
+  & .to-blue-900\/20 {
+    --tw-gradient-to: rgba(30, 58, 138, 0.1) !important;
+  }
+
+  /* White/5 backgrounds */
+  & .bg-white\/5 {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+  }
+
+  /* Hover states */
+  & .hover\:text-white:hover {
+    color: #111827 !important;
+  }
+
+  & .hover\:border-purple-500\/50:hover {
+    border-color: rgba(168, 85, 247, 0.5) !important;
+  }
+
+  /* Product cards */
+  & .group-hover\:text-purple-400 {
+    color: #7c3aed !important;
+  }
+
+  /* Footer */
+  & footer {
+    background-color: #f9fafb !important;
+  }
+}
+
+/* Prose styles for light mode */
+.light .prose-invert {
+  --tw-prose-body: #374151 !important;
+  --tw-prose-headings: #111827 !important;
+  --tw-prose-links: #7c3aed !important;
+}
+
+/* Smooth theme transitions for all elements */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+}
+
+/* Disable transitions for specific elements that shouldn't animate */
+.no-transition,
+.no-transition * {
+  transition: none !important;
+}

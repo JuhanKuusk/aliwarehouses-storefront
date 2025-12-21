@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Kiire EU tarne",
+    "loading": "Laadimine...",
+    "error": "Midagi läks valesti",
+    "search": "Otsi",
+    "searchPlaceholder": "Otsi tooteid...",
+    "viewAll": "Vaata kõiki",
+    "learnMore": "Loe lähemalt"
+  },
+  "nav": {
+    "home": "Avaleht",
+    "products": "Tooted",
+    "collections": "Kollektsioonid",
+    "cart": "Ostukorv",
+    "account": "Konto"
+  },
+  "categories": {
+    "homeDecor": "Kodusisustus ja dekoor",
+    "lighting": "Valgustus",
+    "furniture": "Mööbel",
+    "garden": "Aed",
+    "beauty": "Ilutooted",
+    "beautyEquipment": "Kehahooldusseadmed",
+    "solarEnergy": "Taastuvenergia",
+    "toys": "Mänguasjad",
+    "pets": "Lemmikloomad",
+    "sports": "Sport ja vabaaeg"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium tooted, EU tarne",
+      "subtitle": "Osta kvaliteetseid tooteid kinnitatud EU ladudest kiire kohaletoimetamisega üle Euroopa",
+      "cta": "Osta kohe"
+    },
+    "featured": {
+      "title": "Esiletõstetud tooted",
+      "subtitle": "Meie populaarseimad tooted"
+    },
+    "categories": {
+      "title": "Sirvi kategooriate järgi",
+      "subtitle": "Leia mida vajad"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Kiire EU tarne",
+        "description": "Kohaletoimetamine 3-7 tööpäevaga"
+      },
+      "quality": {
+        "title": "Tagatud kvaliteet",
+        "description": "Ainult kinnitatud tarnijad"
+      },
+      "support": {
+        "title": "EU tugi",
+        "description": "Klienditeenindus sinu keeles"
+      },
+      "returns": {
+        "title": "Lihtne tagastus",
+        "description": "30-päevane tagastusõigus"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Lisa ostukorvi",
+    "buyNow": "Osta kohe",
+    "outOfStock": "Laost otsas",
+    "inStock": "Laos olemas",
+    "description": "Kirjeldus",
+    "details": "Üksikasjad",
+    "reviews": "Arvustused",
+    "relatedProducts": "Seotud tooted",
+    "shipsFrom": "Saadetakse EU-st",
+    "freeShipping": "Tasuta tarne alates 75€",
+    "usage": "Kasutamine",
+    "specifications": "Tehnilised andmed",
+    "dimensions": "Mõõtmed",
+    "packageInfo": "Pakendi info",
+    "style": "Stiil",
+    "material": "Materjal",
+    "color": "Värv",
+    "process": "Protsess",
+    "installationType": "Paigaldustüüp",
+    "indoorOutdoor": "Sise-/väliskasutus",
+    "productSize": "Toote suurus",
+    "packageSize": "Pakendi suurus",
+    "weight": "Kaal",
+    "packageContents": "Pakendi sisu",
+    "originCountry": "Päritolumaa",
+    "deliveryTime": "Eeldatav tarneaeg"
+  },
+  "cart": {
+    "title": "Sinu ostukorv",
+    "empty": "Sinu ostukorv on tühi",
+    "continueShopping": "Jätka ostlemist",
+    "subtotal": "Vahesumma",
+    "shipping": "Tarne",
+    "total": "Kokku",
+    "checkout": "Mine kassasse",
+    "remove": "Eemalda",
+    "quantity": "Kogus"
+  },
+  "footer": {
+    "about": "Meist",
+    "contact": "Kontakt",
+    "terms": "Kasutustingimused",
+    "privacy": "Privaatsuspoliitika",
+    "shipping": "Tarneinfo",
+    "returns": "Tagastused",
+    "copyright": "© 2024 AliWarehouses EU. Kõik õigused kaitstud."
+  }
+}
