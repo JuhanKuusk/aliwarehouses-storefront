@@ -11,10 +11,14 @@
   "dependencies": {
     "@shopify/storefront-api-client": "^1.0.9",
     "@supabase/supabase-js": "^2.89.0",
+    "cheerio": "^1.1.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.26",
     "next": "16.1.0",
     "next-intl": "^4.6.1",
+    "puppeteer": "^24.34.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "tailwind-merge": "^3.4.0"
