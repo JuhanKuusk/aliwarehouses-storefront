@@ -40,11 +40,12 @@ async function fetchViaScraperApi(url: string): Promise<string> {
   // Note: AliExpress is a protected domain requiring premium/ultra_premium proxies
   // Free ScraperAPI plan only has datacenter proxies which AliExpress blocks
   // For AliExpress, you need at least the Hobby plan ($49/mo)
+  // Hobby/Startup plans only support 'us' or 'eu' country codes (not specific countries like 'de')
   const params = new URLSearchParams({
     api_key: apiKey,
     url: url,
     render: 'true',                          // Enable JavaScript rendering
-    country_code: 'de',                      // Use Germany proxy (closer to EU warehouse)
+    country_code: 'eu',                      // Use EU proxy (Hobby plan only supports 'us' or 'eu')
     device_type: 'desktop',
   });
 
