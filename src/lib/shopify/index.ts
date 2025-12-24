@@ -28,7 +28,7 @@ export async function getProducts(first = 20): Promise<ShopifyProduct[]> {
   }>({
     query: GET_PRODUCTS,
     variables: { first },
-    tags: ['products'],
+    cache: 'no-store', // Always fetch fresh product data
   });
 
   return data.products.edges.map((edge) => edge.node);

@@ -157,9 +157,10 @@ async function getLocationId(): Promise<string> {
   if (locationsRes.ok) {
     const data = await locationsRes.json();
     if (data.locations?.[0]?.id) {
-      cachedLocationId = data.locations[0].id.toString();
-      console.log(`📍 Using location: ${data.locations[0].name} (ID: ${cachedLocationId})`);
-      return cachedLocationId;
+      const locationId = data.locations[0].id.toString();
+      cachedLocationId = locationId;
+      console.log(`📍 Using location: ${data.locations[0].name} (ID: ${locationId})`);
+      return locationId;
     }
   }
 
@@ -207,9 +208,10 @@ async function getLocationId(): Promise<string> {
     throw new Error('No location ID found in inventory levels');
   }
 
-  cachedLocationId = locationId.toString();
-  console.log(`📍 Using location ID: ${cachedLocationId}`);
-  return cachedLocationId;
+  const locId = locationId.toString();
+  cachedLocationId = locId;
+  console.log(`📍 Using location ID: ${locId}`);
+  return locId;
 }
 
 /**

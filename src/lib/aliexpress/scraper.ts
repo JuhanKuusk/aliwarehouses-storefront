@@ -219,7 +219,7 @@ export async function launchBrowser(headless: boolean = true, useScraperApi: boo
   }
 
   return puppeteer.launch({
-    headless: headless ? 'new' : false,
+    headless: headless,
     args,
     defaultViewport: null,
   });

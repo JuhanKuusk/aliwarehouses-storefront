@@ -7,6 +7,9 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import type { Locale } from "@/i18n/routing";
 
+// Force dynamic rendering to always fetch fresh products
+export const dynamic = 'force-dynamic';
+
 type Props = {
   params: Promise<{ locale: string }>;
 };
