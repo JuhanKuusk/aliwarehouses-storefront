@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Kunsinna veloċi fl-UE",
+    "loading": "Qed jitgħabba...",
+    "error": "Xi ħaġa marret ħażin",
+    "search": "Fittex",
+    "searchPlaceholder": "Fittex prodotti...",
+    "viewAll": "Ara kollha",
+    "learnMore": "Tgħallem aktar"
+  },
+  "nav": {
+    "home": "Paġna Ewlenija",
+    "products": "Prodotti",
+    "collections": "Kollezzjonijiet",
+    "cart": "Basket",
+    "account": "Kont"
+  },
+  "categories": {
+    "homeDecor": "Dekorazzjoni tad-Dar",
+    "lighting": "Dawl",
+    "furniture": "Għamara",
+    "garden": "Ġnien",
+    "beauty": "Prodotti tas-Sbuħija",
+    "beautyEquipment": "Tagħmir għall-Kura tal-Ġisem",
+    "solarEnergy": "Enerġija Rinnovabbli",
+    "toys": "Ġugarelli",
+    "pets": "Annimali tad-Dar",
+    "sports": "Sports u Rikreazzjoni"
+  },
+  "home": {
+    "hero": {
+      "title": "Prodotti Premium, Kunsinna fl-UE",
+      "subtitle": "Ixtri prodotti ta' kwalità minn maħżen tal-UE verifikati b'kunsinna veloċi madwar l-Ewropa kollha",
+      "cta": "Ixtri Issa"
+    },
+    "featured": {
+      "title": "Prodotti Magħżulin",
+      "subtitle": "L-aktar oġġetti popolari tagħna"
+    },
+    "categories": {
+      "title": "Ixtri bil-Kategorija",
+      "subtitle": "Sib dak li għandek bżonn"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Kunsinna veloċi fl-UE",
+        "description": "Kunsinna fi 3-7 ijiem tax-xogħol"
+      },
+      "quality": {
+        "title": "Kwalità Garantita",
+        "description": "Fornituri verifikati biss"
+      },
+      "support": {
+        "title": "Appoġġ fl-UE",
+        "description": "Servizz tal-klijenti bil-lingwa tiegħek"
+      },
+      "returns": {
+        "title": "Ritorn Faċli",
+        "description": "Politika ta' ritorn ta' 30 jum"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Żid fil-Basket",
+    "buyNow": "Ixtri Issa",
+    "outOfStock": "Mhux disponibbli",
+    "inStock": "Disponibbli",
+    "description": "Deskrizzjoni",
+    "details": "Dettalji",
+    "reviews": "Reviżjonijiet",
+    "relatedProducts": "Prodotti Relatati",
+    "shipsFrom": "Jintbagħat mill-UE",
+    "freeShipping": "Kunsinna b'xejn fuq €75",
+    "usage": "Użu",
+    "specifications": "Speċifikazzjonijiet",
+    "dimensions": "Dimensjonijiet",
+    "packageInfo": "Informazzjoni dwar il-Pakkett",
+    "style": "Stil",
+    "material": "Materjal",
+    "color": "Kulur",
+    "process": "Proċess",
+    "installationType": "Tip ta' Installazzjoni",
+    "indoorOutdoor": "Ġewwa/Barra",
+    "productSize": "Daqs tal-Prodott",
+    "packageSize": "Daqs tal-Pakkett",
+    "weight": "Piż",
+    "packageContents": "Kontenut tal-Pakkett",
+    "originCountry": "Pajjiż tal-Oriġini",
+    "deliveryTime": "Ħin Stmat tal-Kunsinna"
+  },
+  "cart": {
+    "title": "Il-Basket Tiegħek",
+    "empty": "Il-basket tiegħek huwa vojt",
+    "continueShopping": "Kompli tixtri",
+    "subtotal": "Subtotal",
+    "shipping": "Kunsinna",
+    "total": "Total",
+    "checkout": "Kompli għall-Checkout",
+    "remove": "Neħħi",
+    "quantity": "Kwantità"
+  },
+  "footer": {
+    "about": "Dwarna",
+    "contact": "Kuntatt",
+    "terms": "Termini tas-Servizz",
+    "privacy": "Politika tal-Privatezza",
+    "shipping": "Informazzjoni dwar il-Kunsinna",
+    "returns": "Ritorn",
+    "copyright": "© 2024 AliWarehouses EU. Id-drittijiet kollha riżervati."
+  }
+}

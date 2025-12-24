@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Snabb EU-leverans",
+    "loading": "Laddar...",
+    "error": "Något gick fel",
+    "search": "Sök",
+    "searchPlaceholder": "Sök produkter...",
+    "viewAll": "Visa alla",
+    "learnMore": "Läs mer"
+  },
+  "nav": {
+    "home": "Hem",
+    "products": "Produkter",
+    "collections": "Kollektioner",
+    "cart": "Kundvagn",
+    "account": "Konto"
+  },
+  "categories": {
+    "homeDecor": "Heminredning",
+    "lighting": "Belysning",
+    "furniture": "Möbler",
+    "garden": "Trädgård",
+    "beauty": "Skönhetsprodukter",
+    "beautyEquipment": "Kroppsvårdsutrustning",
+    "solarEnergy": "Förnybar energi",
+    "toys": "Leksaker",
+    "pets": "Husdjur",
+    "sports": "Sport och fritid"
+  },
+  "home": {
+    "hero": {
+      "title": "Premiumprodukter, EU-leverans",
+      "subtitle": "Handla kvalitetsprodukter från verifierade EU-lager med snabb leverans över hela Europa",
+      "cta": "Handla nu"
+    },
+    "featured": {
+      "title": "Utvalda produkter",
+      "subtitle": "Våra mest populära artiklar"
+    },
+    "categories": {
+      "title": "Handla efter kategori",
+      "subtitle": "Hitta det du behöver"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Snabb EU-leverans",
+        "description": "Leverans inom 3-7 arbetsdagar"
+      },
+      "quality": {
+        "title": "Kvalitetsgaranti",
+        "description": "Endast verifierade leverantörer"
+      },
+      "support": {
+        "title": "EU-support",
+        "description": "Kundservice på ditt språk"
+      },
+      "returns": {
+        "title": "Enkla returer",
+        "description": "30 dagars returpolicy"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Lägg i kundvagn",
+    "buyNow": "Köp nu",
+    "outOfStock": "Slut i lager",
+    "inStock": "I lager",
+    "description": "Beskrivning",
+    "details": "Detaljer",
+    "reviews": "Recensioner",
+    "relatedProducts": "Relaterade produkter",
+    "shipsFrom": "Skickas från EU",
+    "freeShipping": "Fri frakt över €75",
+    "usage": "Användning",
+    "specifications": "Specifikationer",
+    "dimensions": "Mått",
+    "packageInfo": "Förpackningsinformation",
+    "style": "Stil",
+    "material": "Material",
+    "color": "Färg",
+    "process": "Process",
+    "installationType": "Installationstyp",
+    "indoorOutdoor": "Inomhus/Utomhus",
+    "productSize": "Produktstorlek",
+    "packageSize": "Förpackningsstorlek",
+    "weight": "Vikt",
+    "packageContents": "Förpackningsinnehåll",
+    "originCountry": "Ursprungsland",
+    "deliveryTime": "Beräknad leveranstid"
+  },
+  "cart": {
+    "title": "Din kundvagn",
+    "empty": "Din kundvagn är tom",
+    "continueShopping": "Fortsätt handla",
+    "subtotal": "Delsumma",
+    "shipping": "Frakt",
+    "total": "Totalt",
+    "checkout": "Gå till kassan",
+    "remove": "Ta bort",
+    "quantity": "Antal"
+  },
+  "footer": {
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "terms": "Användarvillkor",
+    "privacy": "Integritetspolicy",
+    "shipping": "Fraktinformation",
+    "returns": "Returer",
+    "copyright": "© 2024 AliWarehouses EU. Alla rättigheter förbehållna."
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Nopea EU-toimitus",
+    "loading": "Ladataan...",
+    "error": "Jotain meni pieleen",
+    "search": "Hae",
+    "searchPlaceholder": "Hae tuotteita...",
+    "viewAll": "Näytä kaikki",
+    "learnMore": "Lue lisää"
+  },
+  "nav": {
+    "home": "Etusivu",
+    "products": "Tuotteet",
+    "collections": "Kokoelmat",
+    "cart": "Ostoskori",
+    "account": "Tili"
+  },
+  "categories": {
+    "homeDecor": "Sisustus",
+    "lighting": "Valaistus",
+    "furniture": "Huonekalut",
+    "garden": "Puutarha",
+    "beauty": "Kauneustuotteet",
+    "beautyEquipment": "Vartalonhoitolaitteet",
+    "solarEnergy": "Uusiutuva energia",
+    "toys": "Lelut",
+    "pets": "Lemmikit",
+    "sports": "Urheilu ja vapaa-aika"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium-tuotteet, EU-toimitus",
+      "subtitle": "Osta laadukkaita tuotteita varmennetuilta EU-varastoilta nopealla toimituksella kaikkialle Eurooppaan",
+      "cta": "Osta nyt"
+    },
+    "featured": {
+      "title": "Suositut tuotteet",
+      "subtitle": "Suosituimmat tuotteemme"
+    },
+    "categories": {
+      "title": "Osta kategorian mukaan",
+      "subtitle": "Löydä mitä tarvitset"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Nopea EU-toimitus",
+        "description": "Toimitus 3-7 arkipäivässä"
+      },
+      "quality": {
+        "title": "Laatu taattu",
+        "description": "Vain varmennetut toimittajat"
+      },
+      "support": {
+        "title": "EU-tuki",
+        "description": "Asiakaspalvelu omalla kielelläsi"
+      },
+      "returns": {
+        "title": "Helpot palautukset",
+        "description": "30 päivän palautusoikeus"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Lisää ostoskoriin",
+    "buyNow": "Osta nyt",
+    "outOfStock": "Loppu varastosta",
+    "inStock": "Varastossa",
+    "description": "Kuvaus",
+    "details": "Tiedot",
+    "reviews": "Arvostelut",
+    "relatedProducts": "Liittyvät tuotteet",
+    "shipsFrom": "Lähetetään EU:sta",
+    "freeShipping": "Ilmainen toimitus yli €75",
+    "usage": "Käyttö",
+    "specifications": "Tekniset tiedot",
+    "dimensions": "Mitat",
+    "packageInfo": "Pakkauksen tiedot",
+    "style": "Tyyli",
+    "material": "Materiaali",
+    "color": "Väri",
+    "process": "Prosessi",
+    "installationType": "Asennustapa",
+    "indoorOutdoor": "Sisä-/Ulkokäyttö",
+    "productSize": "Tuotteen koko",
+    "packageSize": "Pakkauksen koko",
+    "weight": "Paino",
+    "packageContents": "Pakkauksen sisältö",
+    "originCountry": "Alkuperämaa",
+    "deliveryTime": "Arvioitu toimitusaika"
+  },
+  "cart": {
+    "title": "Ostoskorisi",
+    "empty": "Ostoskorisi on tyhjä",
+    "continueShopping": "Jatka ostoksia",
+    "subtotal": "Välisumma",
+    "shipping": "Toimitus",
+    "total": "Yhteensä",
+    "checkout": "Siirry kassalle",
+    "remove": "Poista",
+    "quantity": "Määrä"
+  },
+  "footer": {
+    "about": "Tietoa meistä",
+    "contact": "Yhteystiedot",
+    "terms": "Käyttöehdot",
+    "privacy": "Tietosuojakäytäntö",
+    "shipping": "Toimitustiedot",
+    "returns": "Palautukset",
+    "copyright": "© 2024 AliWarehouses EU. Kaikki oikeudet pidätetään."
+  }
+}

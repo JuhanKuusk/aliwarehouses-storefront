@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Hitra EU dostava",
+    "loading": "Nalaganje...",
+    "error": "Nekaj je šlo narobe",
+    "search": "Iskanje",
+    "searchPlaceholder": "Išči izdelke...",
+    "viewAll": "Poglej vse",
+    "learnMore": "Več informacij"
+  },
+  "nav": {
+    "home": "Domov",
+    "products": "Izdelki",
+    "collections": "Kolekcije",
+    "cart": "Košarica",
+    "account": "Račun"
+  },
+  "categories": {
+    "homeDecor": "Domači dekor",
+    "lighting": "Razsvetljava",
+    "furniture": "Pohištvo",
+    "garden": "Vrt",
+    "beauty": "Lepotni izdelki",
+    "beautyEquipment": "Oprema za nego telesa",
+    "solarEnergy": "Obnovljiva energija",
+    "toys": "Igrače",
+    "pets": "Hišni ljubljenčki",
+    "sports": "Šport in prosti čas"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium izdelki, EU dostava",
+      "subtitle": "Kupujte kakovostne izdelke iz preverjenih EU skladišč s hitro dostavo po vsej Evropi",
+      "cta": "Nakupuj zdaj"
+    },
+    "featured": {
+      "title": "Izpostavljeni izdelki",
+      "subtitle": "Naši najbolj priljubljeni artikli"
+    },
+    "categories": {
+      "title": "Nakupuj po kategorijah",
+      "subtitle": "Poiščite, kar potrebujete"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Hitra EU dostava",
+        "description": "Dostava v 3-7 delovnih dneh"
+      },
+      "quality": {
+        "title": "Zagotovljena kakovost",
+        "description": "Samo preverjeni dobavitelji"
+      },
+      "support": {
+        "title": "EU podpora",
+        "description": "Podpora strankam v vašem jeziku"
+      },
+      "returns": {
+        "title": "Enostavni vračilo",
+        "description": "30-dnevna politika vračil"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Dodaj v košarico",
+    "buyNow": "Kupi zdaj",
+    "outOfStock": "Ni na zalogi",
+    "inStock": "Na zalogi",
+    "description": "Opis",
+    "details": "Podrobnosti",
+    "reviews": "Ocene",
+    "relatedProducts": "Sorodni izdelki",
+    "shipsFrom": "Pošiljamo iz EU",
+    "freeShipping": "Brezplačna dostava nad €75",
+    "usage": "Uporaba",
+    "specifications": "Specifikacije",
+    "dimensions": "Dimenzije",
+    "packageInfo": "Informacije o paketu",
+    "style": "Slog",
+    "material": "Material",
+    "color": "Barva",
+    "process": "Postopek",
+    "installationType": "Tip namestitve",
+    "indoorOutdoor": "Notranji/Zunanji",
+    "productSize": "Velikost izdelka",
+    "packageSize": "Velikost paketa",
+    "weight": "Teža",
+    "packageContents": "Vsebina paketa",
+    "originCountry": "Država izvora",
+    "deliveryTime": "Predviden čas dostave"
+  },
+  "cart": {
+    "title": "Vaša košarica",
+    "empty": "Vaša košarica je prazna",
+    "continueShopping": "Nadaljuj z nakupovanjem",
+    "subtotal": "Vmesni seštevek",
+    "shipping": "Dostava",
+    "total": "Skupaj",
+    "checkout": "Nadaljuj na blagajno",
+    "remove": "Odstrani",
+    "quantity": "Količina"
+  },
+  "footer": {
+    "about": "O nas",
+    "contact": "Kontakt",
+    "terms": "Pogoji uporabe",
+    "privacy": "Pravilnik o zasebnosti",
+    "shipping": "Informacije o dostavi",
+    "returns": "Vračila",
+    "copyright": "© 2024 AliWarehouses EU. Vse pravice pridržane."
+  }
+}

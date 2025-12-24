@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Greitas ES pristatymas",
+    "loading": "Kraunama...",
+    "error": "Kažkas nutiko",
+    "search": "Ieškoti",
+    "searchPlaceholder": "Ieškoti produktų...",
+    "viewAll": "Peržiūrėti visus",
+    "learnMore": "Sužinoti daugiau"
+  },
+  "nav": {
+    "home": "Pradžia",
+    "products": "Produktai",
+    "collections": "Kolekcijos",
+    "cart": "Krepšelis",
+    "account": "Paskyra"
+  },
+  "categories": {
+    "homeDecor": "Namų dekoras",
+    "lighting": "Apšvietimas",
+    "furniture": "Baldai",
+    "garden": "Sodas",
+    "beauty": "Grožio produktai",
+    "beautyEquipment": "Kūno priežiūros įranga",
+    "solarEnergy": "Atsinaujinanti energija",
+    "toys": "Žaislai",
+    "pets": "Augintiniai",
+    "sports": "Sportas ir laisvalaikis"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium produktai, ES pristatymas",
+      "subtitle": "Pirkite kokybiškus produktus iš patikrintų ES sandėlių su greitu pristatymu visoje Europoje",
+      "cta": "Pirkti dabar"
+    },
+    "featured": {
+      "title": "Populiariausi produktai",
+      "subtitle": "Mūsų populiariausios prekės"
+    },
+    "categories": {
+      "title": "Pirkti pagal kategoriją",
+      "subtitle": "Raskite tai, ko jums reikia"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Greitas ES pristatymas",
+        "description": "Pristatymas per 3-7 darbo dienas"
+      },
+      "quality": {
+        "title": "Kokybės garantija",
+        "description": "Tik patikrinti tiekėjai"
+      },
+      "support": {
+        "title": "ES palaikymas",
+        "description": "Klientų aptarnavimas jūsų kalba"
+      },
+      "returns": {
+        "title": "Lengvas grąžinimas",
+        "description": "30 dienų grąžinimo politika"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Į krepšelį",
+    "buyNow": "Pirkti dabar",
+    "outOfStock": "Išparduota",
+    "inStock": "Yra sandėlyje",
+    "description": "Aprašymas",
+    "details": "Detalės",
+    "reviews": "Atsiliepimai",
+    "relatedProducts": "Susiję produktai",
+    "shipsFrom": "Siunčiama iš ES",
+    "freeShipping": "Nemokamas pristatymas virš €75",
+    "usage": "Naudojimas",
+    "specifications": "Specifikacijos",
+    "dimensions": "Matmenys",
+    "packageInfo": "Pakuotės informacija",
+    "style": "Stilius",
+    "material": "Medžiaga",
+    "color": "Spalva",
+    "process": "Procesas",
+    "installationType": "Montavimo tipas",
+    "indoorOutdoor": "Vidaus/Lauko",
+    "productSize": "Produkto dydis",
+    "packageSize": "Pakuotės dydis",
+    "weight": "Svoris",
+    "packageContents": "Pakuotės turinys",
+    "originCountry": "Kilmės šalis",
+    "deliveryTime": "Numatomas pristatymo laikas"
+  },
+  "cart": {
+    "title": "Jūsų krepšelis",
+    "empty": "Jūsų krepšelis tuščias",
+    "continueShopping": "Tęsti apsipirkimą",
+    "subtotal": "Tarpinė suma",
+    "shipping": "Pristatymas",
+    "total": "Viso",
+    "checkout": "Pereiti prie apmokėjimo",
+    "remove": "Pašalinti",
+    "quantity": "Kiekis"
+  },
+  "footer": {
+    "about": "Apie mus",
+    "contact": "Kontaktai",
+    "terms": "Paslaugų sąlygos",
+    "privacy": "Privatumo politika",
+    "shipping": "Pristatymo informacija",
+    "returns": "Grąžinimai",
+    "copyright": "© 2024 AliWarehouses EU. Visos teisės saugomos."
+  }
+}

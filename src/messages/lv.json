@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Ātra piegāde ES",
+    "loading": "Ielādē...",
+    "error": "Kaut kas nogāja greizi",
+    "search": "Meklēt",
+    "searchPlaceholder": "Meklēt produktus...",
+    "viewAll": "Skatīt visus",
+    "learnMore": "Uzzināt vairāk"
+  },
+  "nav": {
+    "home": "Sākums",
+    "products": "Produkti",
+    "collections": "Kolekcijas",
+    "cart": "Grozs",
+    "account": "Konts"
+  },
+  "categories": {
+    "homeDecor": "Mājas dekors",
+    "lighting": "Apgaismojums",
+    "furniture": "Mēbeles",
+    "garden": "Dārzs",
+    "beauty": "Skaistumkopšanas līdzekļi",
+    "beautyEquipment": "Ķermeņa kopšanas ierīces",
+    "solarEnergy": "Atjaunojamā enerģija",
+    "toys": "Rotaļlietas",
+    "pets": "Mājdzīvnieki",
+    "sports": "Sports un atpūta"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium produkti, ES piegāde",
+      "subtitle": "Iepērcieties kvalitatīvus produktus no pārbaudītām ES noliktavām ar ātru piegādi visā Eiropā",
+      "cta": "Iepirkties tagad"
+    },
+    "featured": {
+      "title": "Populārākie produkti",
+      "subtitle": "Mūsu pieprasītākās preces"
+    },
+    "categories": {
+      "title": "Iepirkties pēc kategorijas",
+      "subtitle": "Atrodiet to, kas jums vajadzīgs"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Ātra ES piegāde",
+        "description": "Piegāde 3-7 darba dienu laikā"
+      },
+      "quality": {
+        "title": "Garantēta kvalitāte",
+        "description": "Tikai verificēti piegādātāji"
+      },
+      "support": {
+        "title": "ES atbalsts",
+        "description": "Klientu apkalpošana jūsu valodā"
+      },
+      "returns": {
+        "title": "Vienkārša atgriešana",
+        "description": "30 dienu atgriešanas politika"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Pievienot grozam",
+    "buyNow": "Pirkt tagad",
+    "outOfStock": "Nav noliktavā",
+    "inStock": "Ir noliktavā",
+    "description": "Apraksts",
+    "details": "Detaļas",
+    "reviews": "Atsauksmes",
+    "relatedProducts": "Līdzīgi produkti",
+    "shipsFrom": "Sūta no ES",
+    "freeShipping": "Bezmaksas piegāde virs €75",
+    "usage": "Lietošana",
+    "specifications": "Specifikācijas",
+    "dimensions": "Izmēri",
+    "packageInfo": "Iepakojuma informācija",
+    "style": "Stils",
+    "material": "Materiāls",
+    "color": "Krāsa",
+    "process": "Process",
+    "installationType": "Uzstādīšanas veids",
+    "indoorOutdoor": "Iekštelpu/Āra",
+    "productSize": "Produkta izmērs",
+    "packageSize": "Iepakojuma izmērs",
+    "weight": "Svars",
+    "packageContents": "Iepakojuma saturs",
+    "originCountry": "Izcelsmes valsts",
+    "deliveryTime": "Aptuvens piegādes laiks"
+  },
+  "cart": {
+    "title": "Jūsu grozs",
+    "empty": "Jūsu grozs ir tukšs",
+    "continueShopping": "Turpināt iepirkties",
+    "subtotal": "Starpsumma",
+    "shipping": "Piegāde",
+    "total": "Kopā",
+    "checkout": "Turpināt uz norēķinu",
+    "remove": "Noņemt",
+    "quantity": "Daudzums"
+  },
+  "footer": {
+    "about": "Par mums",
+    "contact": "Kontakti",
+    "terms": "Lietošanas noteikumi",
+    "privacy": "Privātuma politika",
+    "shipping": "Piegādes informācija",
+    "returns": "Atgriešana",
+    "copyright": "© 2024 AliWarehouses EU. Visas tiesības aizsargātas."
+  }
+}

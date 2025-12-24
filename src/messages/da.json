@@ -1,0 +1,112 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Hurtig EU-levering",
+    "loading": "Indlæser...",
+    "error": "Noget gik galt",
+    "search": "Søg",
+    "searchPlaceholder": "Søg produkter...",
+    "viewAll": "Se alle",
+    "learnMore": "Læs mere"
+  },
+  "nav": {
+    "home": "Hjem",
+    "products": "Produkter",
+    "collections": "Kollektioner",
+    "cart": "Kurv",
+    "account": "Konto"
+  },
+  "categories": {
+    "homeDecor": "Boligindretning",
+    "lighting": "Belysning",
+    "furniture": "Møbler",
+    "garden": "Have",
+    "beauty": "Skønhedsprodukter",
+    "beautyEquipment": "Kropsplejeudstyr",
+    "solarEnergy": "Vedvarende energi",
+    "toys": "Legetøj",
+    "pets": "Kæledyr",
+    "sports": "Sport og fritid"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium produkter, EU-levering",
+      "subtitle": "Shop kvalitetsprodukter fra verificerede EU-lagre med hurtig levering i hele Europa",
+      "cta": "Shop nu"
+    },
+    "featured": {
+      "title": "Udvalgte produkter",
+      "subtitle": "Vores mest populære varer"
+    },
+    "categories": {
+      "title": "Shop efter kategori",
+      "subtitle": "Find det du har brug for"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Hurtig EU-levering",
+        "description": "Levering inden for 3-7 hverdage"
+      },
+      "quality": {
+        "title": "Kvalitetsgaranti",
+        "description": "Kun verificerede leverandører"
+      },
+      "support": {
+        "title": "EU-support",
+        "description": "Kundeservice på dit sprog"
+      },
+      "returns": {
+        "title": "Nemme returneringer",
+        "description": "30 dages returpolitik"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Læg i kurv",
+    "buyNow": "Køb nu",
+    "outOfStock": "Ikke på lager",
+    "inStock": "På lager",
+    "description": "Beskrivelse",
+    "details": "Detaljer",
+    "reviews": "Anmeldelser",
+    "relatedProducts": "Relaterede produkter",
+    "shipsFrom": "Sendes fra EU",
+    "freeShipping": "Gratis fragt over €75",
+    "usage": "Brug",
+    "specifications": "Specifikationer",
+    "dimensions": "Dimensioner",
+    "packageInfo": "Pakkeinformation",
+    "style": "Stil",
+    "material": "Materiale",
+    "color": "Farve",
+    "process": "Proces",
+    "installationType": "Installationstype",
+    "indoorOutdoor": "Indendørs/Udendørs",
+    "productSize": "Produktstørrelse",
+    "packageSize": "Pakkestørrelse",
+    "weight": "Vægt",
+    "packageContents": "Pakkeindhold",
+    "originCountry": "Oprindelsesland",
+    "deliveryTime": "Estimeret leveringstid"
+  },
+  "cart": {
+    "title": "Din kurv",
+    "empty": "Din kurv er tom",
+    "continueShopping": "Fortsæt med at handle",
+    "subtotal": "Subtotal",
+    "shipping": "Fragt",
+    "total": "Total",
+    "checkout": "Gå til kassen",
+    "remove": "Fjern",
+    "quantity": "Antal"
+  },
+  "footer": {
+    "about": "Om os",
+    "contact": "Kontakt",
+    "terms": "Servicevilkår",
+    "privacy": "Privatlivspolitik",
+    "shipping": "Fragtinformation",
+    "returns": "Returneringer",
+    "copyright": "© 2024 AliWarehouses EU. Alle rettigheder forbeholdes."
+  }
+}
