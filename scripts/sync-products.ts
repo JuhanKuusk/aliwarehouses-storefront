@@ -17,6 +17,7 @@ config({ path: resolve(process.cwd(), ".env.local") });
 // Now we can access env vars
 const SHOPIFY_DOMAIN = process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN!;
 const SHOPIFY_TOKEN = process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN!;
+const SHOPIFY_ADMIN_TOKEN = process.env.SHOPIFY_ADMIN_API_TOKEN!;
 const SHOPIFY_API_VERSION = process.env.NEXT_PUBLIC_SHOPIFY_API_VERSION || "2024-10";
 const DEEPL_API_KEY = process.env.DEEPL_API_KEY!;
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
@@ -252,43 +253,33 @@ async function getUsage(): Promise<{ character_count: number; character_limit: n
   return response.json();
 }
 
-// Shopify functions
+// Shopify functions - Use Admin API to get ALL products including those not on sales channels
 async function fetchProducts(limit: number = 250): Promise<ShopifyProduct[]> {
-  const query = `
-    query GetProducts($first: Int!) {
-      products(first: $first) {
-        edges {
-          node {
-            id
-            handle
-            title
-            description
-            descriptionHtml
-            featuredImage {
-              url
-              altText
-            }
-          }
-        }
-      }
-    }
-  `;
-
   const response = await fetch(
-    `https://${SHOPIFY_DOMAIN}/api/${SHOPIFY_API_VERSION}/graphql.json`,
+    `https://${SHOPIFY_DOMAIN}/admin/api/${SHOPIFY_API_VERSION}/products.json?limit=${limit}`,
     {
-      method: "POST",
       headers: {
+        "X-Shopify-Access-Token": SHOPIFY_ADMIN_TOKEN,
         "Content-Type": "application/json",
-        "X-Shopify-Storefront-Access-Token": SHOPIFY_TOKEN,
       },
-      body: JSON.stringify({ query, variables: { first: limit } }),
     }
   );
 
+  if (!response.ok) {
+    throw new Error(`Shopify Admin API error: ${response.status}`);
+  }
+
   const data = await response.json();
-  if (data.errors) throw new Error(`Shopify API error: ${JSON.stringify(data.errors)}`);
-  return data.data.products.edges.map((edge: { node: ShopifyProduct }) => edge.node);
+
+  // Map Admin API response to our ShopifyProduct interface
+  return (data.products || []).map((p: { id: number; handle: string; title: string; body_html: string; image?: { src: string } }) => ({
+    id: `gid://shopify/Product/${p.id}`,
+    handle: p.handle,
+    title: p.title,
+    description: p.body_html?.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim() || "",
+    descriptionHtml: p.body_html || "",
+    featuredImage: p.image ? { url: p.image.src, altText: null } : undefined,
+  }));
 }
 
 async function fetchProductByHandle(handle: string): Promise<ShopifyProduct | null> {
@@ -464,14 +455,15 @@ async function translateProduct(product: ShopifyProduct, options: { skipOpenAI?:
     const title = translationsMap.title?.[locale] || product.title;
     const description = translationsMap.description?.[locale] || product.description || "";
 
-    // Generate slug from title
-    const slug = title
+    // Generate slug from title + product ID for uniqueness
+    const baseSlug = title
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "")
-      .substring(0, 50);
+      .substring(0, 40);
+    const slug = `${baseSlug}-${shopifyProductId.slice(-6)}`;
 
     // Build translated specifications
     const translatedSpecs: Record<string, string | null> = {};
