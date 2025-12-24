@@ -7,7 +7,34 @@
     "search": "Søg",
     "searchPlaceholder": "Søg produkter...",
     "viewAll": "Se alle",
-    "learnMore": "Læs mere"
+    "learnMore": "Læs mere",
+    "reset": "Nulstil",
+    "apply": "Anvend",
+    "showFilters": "Vis filtre",
+    "hideFilters": "Skjul filtre"
+  },
+  "filters": {
+    "title": "Filtre",
+    "price": "Pris",
+    "priceRange": "Prisinterval",
+    "minPrice": "Min pris",
+    "maxPrice": "Max pris",
+    "availability": "Tilgængelighed",
+    "inStockOnly": "Kun på lager",
+    "allProducts": "Alle produkter",
+    "sort": "Sorter efter",
+    "sortOptions": {
+      "featured": "Udvalgte",
+      "priceLowHigh": "Pris: stigende",
+      "priceHighLow": "Pris: faldende",
+      "newest": "Nyeste",
+      "bestSelling": "Bedst sælgende"
+    },
+    "category": "Kategori",
+    "allCategories": "Alle kategorier",
+    "resultsCount": "{count} produkter",
+    "noResults": "Ingen produkter matcher dine filtre",
+    "clearAll": "Ryd alle filtre"
   },
   "nav": {
     "home": "Hjem",

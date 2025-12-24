@@ -7,7 +7,34 @@
     "search": "Pretraži",
     "searchPlaceholder": "Pretraži proizvode...",
     "viewAll": "Pogledaj sve",
-    "learnMore": "Saznaj više"
+    "learnMore": "Saznaj više",
+    "reset": "Resetiraj",
+    "apply": "Primijeni",
+    "showFilters": "Prikaži filtre",
+    "hideFilters": "Sakrij filtre"
+  },
+  "filters": {
+    "title": "Filtri",
+    "price": "Cijena",
+    "priceRange": "Raspon cijena",
+    "minPrice": "Min cijena",
+    "maxPrice": "Max cijena",
+    "availability": "Dostupnost",
+    "inStockOnly": "Samo na zalihi",
+    "allProducts": "Svi proizvodi",
+    "sort": "Sortiraj po",
+    "sortOptions": {
+      "featured": "Istaknuto",
+      "priceLowHigh": "Cijena: rastuće",
+      "priceHighLow": "Cijena: padajuće",
+      "newest": "Najnovije",
+      "bestSelling": "Najprodavanije"
+    },
+    "category": "Kategorija",
+    "allCategories": "Sve kategorije",
+    "resultsCount": "{count} proizvoda",
+    "noResults": "Nema proizvoda koji odgovaraju vašim filtrima",
+    "clearAll": "Obriši sve filtre"
   },
   "nav": {
     "home": "Početna",

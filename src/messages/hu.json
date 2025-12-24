@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Gyors EU szallitas",
+    "loading": "Betoltes...",
+    "error": "Valami hiba tortent",
+    "search": "Kereses",
+    "searchPlaceholder": "Termekek keresese...",
+    "viewAll": "Osszes megtekintese",
+    "learnMore": "Tovabb",
+    "reset": "Visszaállítás",
+    "apply": "Alkalmaz",
+    "showFilters": "Szűrők megjelenítése",
+    "hideFilters": "Szűrők elrejtése"
+  },
+  "filters": {
+    "title": "Szűrők",
+    "price": "Ár",
+    "priceRange": "Ártartomány",
+    "minPrice": "Min ár",
+    "maxPrice": "Max ár",
+    "availability": "Elérhetőség",
+    "inStockOnly": "Csak raktáron",
+    "allProducts": "Összes termék",
+    "sort": "Rendezés",
+    "sortOptions": {
+      "featured": "Kiemelt",
+      "priceLowHigh": "Ár: növekvő",
+      "priceHighLow": "Ár: csökkenő",
+      "newest": "Legújabb",
+      "bestSelling": "Legnépszerűbb"
+    },
+    "category": "Kategória",
+    "allCategories": "Összes kategória",
+    "resultsCount": "{count} termék",
+    "noResults": "Nincs a szűrőknek megfelelő termék",
+    "clearAll": "Összes szűrő törlése"
+  },
+  "nav": {
+    "home": "Fooldal",
+    "products": "Termekek",
+    "collections": "Kollekciak",
+    "cart": "Kosar",
+    "account": "Fiok"
+  },
+  "categories": {
+    "homeDecor": "Lakasdekoracio",
+    "lighting": "Vilagitas",
+    "furniture": "Butorok",
+    "garden": "Kert",
+    "beauty": "Szepsegapolasi termekek",
+    "beautyEquipment": "Testapolasi eszkozok",
+    "solarEnergy": "Megujulo energia",
+    "toys": "Jatekok",
+    "pets": "Haziallatok",
+    "sports": "Sport es szabadido"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium termekek, EU kiszallitas",
+      "subtitle": "Vasaroljon minosegi termekeket ellenorzott EU raktarakbol gyors europai szallitassal",
+      "cta": "Vasarlas"
+    },
+    "featured": {
+      "title": "Kiemelt termekek",
+      "subtitle": "Legnepszerubb termekenk"
+    },
+    "categories": {
+      "title": "Vasarlas kategoria szerint",
+      "subtitle": "Talalja meg, amire szuksege van"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Gyors EU szallitas",
+        "description": "Kiszallitas 3-7 munkanapon belul"
+      },
+      "quality": {
+        "title": "Garantalt minoseg",
+        "description": "Csak ellenorzott beszallitok"
+      },
+      "support": {
+        "title": "EU tamogatas",
+        "description": "Ugyfelszolagalat az On nyelven"
+      },
+      "returns": {
+        "title": "Egyszeru visszakuldees",
+        "description": "30 napos visszakuldesi szabalyzat"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Kosarba",
+    "buyNow": "Vasarlas most",
+    "outOfStock": "Nincs keszleten",
+    "inStock": "Keszleten",
+    "description": "Leiras",
+    "details": "Reszletek",
+    "reviews": "Ertekelasek",
+    "relatedProducts": "Kapcsolodo termekek",
+    "shipsFrom": "Szallitas az EU-bol",
+    "freeShipping": "Ingyenes szallitas 75 EUR felett",
+    "usage": "Hasznalat",
+    "specifications": "Specifikaciok",
+    "dimensions": "Meretek",
+    "packageInfo": "Csomag informacio",
+    "style": "Stilus",
+    "material": "Anyag",
+    "color": "Szin",
+    "process": "Folyamat",
+    "installationType": "Telepites tipusa",
+    "indoorOutdoor": "Belteri/Kulteri",
+    "productSize": "Termek merete",
+    "packageSize": "Csomag merete",
+    "weight": "Suly",
+    "packageContents": "Csomag tartalma",
+    "originCountry": "Szarmazasi orszag",
+    "deliveryTime": "Becsult szallitasi ido"
+  },
+  "cart": {
+    "title": "Az On kosara",
+    "empty": "A kosara ures",
+    "continueShopping": "Vasarlas folytatas",
+    "subtotal": "Reszosszeg",
+    "shipping": "Szallitas",
+    "total": "Osszesen",
+    "checkout": "Penztar",
+    "remove": "Eltavolitas",
+    "quantity": "Mennyiseg"
+  },
+  "footer": {
+    "about": "Rolunk",
+    "contact": "Kapcsolat",
+    "terms": "Felhasznalasi feltetelek",
+    "privacy": "Adatvedelmi szabalyzat",
+    "shipping": "Szallitasi informacio",
+    "returns": "Visszakuldees",
+    "copyright": "© 2024 AliWarehouses EU. Minden jog fenntartva."
+  }
+}

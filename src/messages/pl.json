@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Szybka wysylka w UE",
+    "loading": "Ladowanie...",
+    "error": "Cos poszlo nie tak",
+    "search": "Szukaj",
+    "searchPlaceholder": "Szukaj produktow...",
+    "viewAll": "Zobacz wszystko",
+    "learnMore": "Dowiedz sie wiecej",
+    "reset": "Resetuj",
+    "apply": "Zastosuj",
+    "showFilters": "Pokaz filtry",
+    "hideFilters": "Ukryj filtry"
+  },
+  "filters": {
+    "title": "Filtry",
+    "price": "Cena",
+    "priceRange": "Zakres cen",
+    "minPrice": "Cena min",
+    "maxPrice": "Cena max",
+    "availability": "Dostępność",
+    "inStockOnly": "Tylko dostępne",
+    "allProducts": "Wszystkie produkty",
+    "sort": "Sortuj według",
+    "sortOptions": {
+      "featured": "Polecane",
+      "priceLowHigh": "Cena: rosnąco",
+      "priceHighLow": "Cena: malejąco",
+      "newest": "Najnowsze",
+      "bestSelling": "Najlepiej sprzedające się"
+    },
+    "category": "Kategoria",
+    "allCategories": "Wszystkie kategorie",
+    "resultsCount": "{count} produktów",
+    "noResults": "Brak produktów spełniających kryteria filtrów",
+    "clearAll": "Wyczyść wszystkie filtry"
+  },
+  "nav": {
+    "home": "Strona glowna",
+    "products": "Produkty",
+    "collections": "Kolekcje",
+    "cart": "Koszyk",
+    "account": "Konto"
+  },
+  "categories": {
+    "homeDecor": "Dekoracje domu",
+    "lighting": "Oswietlenie",
+    "furniture": "Meble",
+    "garden": "Ogrod",
+    "beauty": "Produkty kosmetyczne",
+    "beautyEquipment": "Sprzet do pielegnacji ciala",
+    "solarEnergy": "Energia odnawialna",
+    "toys": "Zabawki",
+    "pets": "Zwierzeta",
+    "sports": "Sport i rekreacja"
+  },
+  "home": {
+    "hero": {
+      "title": "Produkty premium, dostawa w UE",
+      "subtitle": "Kupuj produkty wysokiej jakosci z zweryfikowanych magazynow UE z szybka wysylka do calej Europy",
+      "cta": "Kup teraz"
+    },
+    "featured": {
+      "title": "Polecane produkty",
+      "subtitle": "Nasze najpopularniejsze produkty"
+    },
+    "categories": {
+      "title": "Kupuj wedlug kategorii",
+      "subtitle": "Znajdz to, czego potrzebujesz"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Szybka wysylka UE",
+        "description": "Dostawa w 3-7 dni roboczych"
+      },
+      "quality": {
+        "title": "Gwarantowana jakosc",
+        "description": "Tylko zweryfikowani dostawcy"
+      },
+      "support": {
+        "title": "Wsparcie UE",
+        "description": "Obsluga klienta w Twoim jezyku"
+      },
+      "returns": {
+        "title": "Latwe zwroty",
+        "description": "30-dniowa polityka zwrotow"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Dodaj do koszyka",
+    "buyNow": "Kup teraz",
+    "outOfStock": "Brak w magazynie",
+    "inStock": "Dostepny",
+    "description": "Opis",
+    "details": "Szczegoly",
+    "reviews": "Opinie",
+    "relatedProducts": "Powiazane produkty",
+    "shipsFrom": "Wysylka z UE",
+    "freeShipping": "Darmowa wysylka powyzej 75 EUR",
+    "usage": "Uzycie",
+    "specifications": "Specyfikacja",
+    "dimensions": "Wymiary",
+    "packageInfo": "Informacje o paczce",
+    "style": "Styl",
+    "material": "Material",
+    "color": "Kolor",
+    "process": "Proces",
+    "installationType": "Typ instalacji",
+    "indoorOutdoor": "Wewnatrz/Na zewnatrz",
+    "productSize": "Rozmiar produktu",
+    "packageSize": "Rozmiar paczki",
+    "weight": "Waga",
+    "packageContents": "Zawartosc opakowania",
+    "originCountry": "Kraj pochodzenia",
+    "deliveryTime": "Szacowany czas dostawy"
+  },
+  "cart": {
+    "title": "Twoj koszyk",
+    "empty": "Twoj koszyk jest pusty",
+    "continueShopping": "Kontynuuj zakupy",
+    "subtotal": "Suma czesciowa",
+    "shipping": "Wysylka",
+    "total": "Razem",
+    "checkout": "Przejdz do kasy",
+    "remove": "Usun",
+    "quantity": "Ilosc"
+  },
+  "footer": {
+    "about": "O nas",
+    "contact": "Kontakt",
+    "terms": "Regulamin",
+    "privacy": "Polityka prywatnosci",
+    "shipping": "Informacje o wysylce",
+    "returns": "Zwroty",
+    "copyright": "© 2024 AliWarehouses EU. Wszelkie prawa zastrzezone."
+  }
+}

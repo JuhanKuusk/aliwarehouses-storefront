@@ -7,7 +7,34 @@
     "search": "Fittex",
     "searchPlaceholder": "Fittex prodotti...",
     "viewAll": "Ara kollha",
-    "learnMore": "Tgħallem aktar"
+    "learnMore": "Tgħallem aktar",
+    "reset": "Irrisettja",
+    "apply": "Applika",
+    "showFilters": "Uri filtri",
+    "hideFilters": "Aħbi filtri"
+  },
+  "filters": {
+    "title": "Filtri",
+    "price": "Prezz",
+    "priceRange": "Medda tal-prezzijiet",
+    "minPrice": "Prezz min",
+    "maxPrice": "Prezz max",
+    "availability": "Disponibbiltà",
+    "inStockOnly": "Disponibbli biss",
+    "allProducts": "Il-prodotti kollha",
+    "sort": "Issortja skont",
+    "sortOptions": {
+      "featured": "Magħżulin",
+      "priceLowHigh": "Prezz: dejjem jogħla",
+      "priceHighLow": "Prezz: dejjem jonqos",
+      "newest": "L-aktar ġodda",
+      "bestSelling": "L-aktar mitbugħa"
+    },
+    "category": "Kategorija",
+    "allCategories": "Il-kategoriji kollha",
+    "resultsCount": "{count} prodotti",
+    "noResults": "L-ebda prodott ma jaqbel mal-filtri tiegħek",
+    "clearAll": "Ħassar il-filtri kollha"
   },
   "nav": {
     "home": "Paġna Ewlenija",

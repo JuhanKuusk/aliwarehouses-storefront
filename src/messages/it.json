@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Spedizione rapida in UE",
+    "loading": "Caricamento...",
+    "error": "Qualcosa e andato storto",
+    "search": "Cerca",
+    "searchPlaceholder": "Cerca prodotti...",
+    "viewAll": "Vedi tutto",
+    "learnMore": "Scopri di piu",
+    "reset": "Ripristina",
+    "apply": "Applica",
+    "showFilters": "Mostra filtri",
+    "hideFilters": "Nascondi filtri"
+  },
+  "filters": {
+    "title": "Filtri",
+    "price": "Prezzo",
+    "priceRange": "Fascia di prezzo",
+    "minPrice": "Prezzo min",
+    "maxPrice": "Prezzo max",
+    "availability": "Disponibilità",
+    "inStockOnly": "Solo disponibili",
+    "allProducts": "Tutti i prodotti",
+    "sort": "Ordina per",
+    "sortOptions": {
+      "featured": "In evidenza",
+      "priceLowHigh": "Prezzo: crescente",
+      "priceHighLow": "Prezzo: decrescente",
+      "newest": "Più recente",
+      "bestSelling": "Più venduti"
+    },
+    "category": "Categoria",
+    "allCategories": "Tutte le categorie",
+    "resultsCount": "{count} prodotti",
+    "noResults": "Nessun prodotto corrisponde ai tuoi filtri",
+    "clearAll": "Cancella tutti i filtri"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Prodotti",
+    "collections": "Collezioni",
+    "cart": "Carrello",
+    "account": "Account"
+  },
+  "categories": {
+    "homeDecor": "Arredamento casa",
+    "lighting": "Illuminazione",
+    "furniture": "Mobili",
+    "garden": "Giardino",
+    "beauty": "Prodotti di bellezza",
+    "beautyEquipment": "Attrezzature per la cura del corpo",
+    "solarEnergy": "Energia rinnovabile",
+    "toys": "Giocattoli",
+    "pets": "Animali domestici",
+    "sports": "Sport e tempo libero"
+  },
+  "home": {
+    "hero": {
+      "title": "Prodotti premium, consegna in UE",
+      "subtitle": "Acquista prodotti di qualita da magazzini UE verificati con spedizione rapida in tutta Europa",
+      "cta": "Acquista ora"
+    },
+    "featured": {
+      "title": "Prodotti in evidenza",
+      "subtitle": "I nostri articoli piu popolari"
+    },
+    "categories": {
+      "title": "Acquista per categoria",
+      "subtitle": "Trova cio che ti serve"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Spedizione rapida UE",
+        "description": "Consegna in 3-7 giorni lavorativi"
+      },
+      "quality": {
+        "title": "Qualita garantita",
+        "description": "Solo fornitori verificati"
+      },
+      "support": {
+        "title": "Supporto UE",
+        "description": "Servizio clienti nella tua lingua"
+      },
+      "returns": {
+        "title": "Resi facili",
+        "description": "Politica di reso di 30 giorni"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Aggiungi al carrello",
+    "buyNow": "Acquista ora",
+    "outOfStock": "Esaurito",
+    "inStock": "Disponibile",
+    "description": "Descrizione",
+    "details": "Dettagli",
+    "reviews": "Recensioni",
+    "relatedProducts": "Prodotti correlati",
+    "shipsFrom": "Spedizione dall'UE",
+    "freeShipping": "Spedizione gratuita oltre 75 EUR",
+    "usage": "Utilizzo",
+    "specifications": "Specifiche",
+    "dimensions": "Dimensioni",
+    "packageInfo": "Informazioni sul pacco",
+    "style": "Stile",
+    "material": "Materiale",
+    "color": "Colore",
+    "process": "Processo",
+    "installationType": "Tipo di installazione",
+    "indoorOutdoor": "Interno/Esterno",
+    "productSize": "Dimensioni prodotto",
+    "packageSize": "Dimensioni pacco",
+    "weight": "Peso",
+    "packageContents": "Contenuto della confezione",
+    "originCountry": "Paese di origine",
+    "deliveryTime": "Tempo di consegna stimato"
+  },
+  "cart": {
+    "title": "Il tuo carrello",
+    "empty": "Il tuo carrello e vuoto",
+    "continueShopping": "Continua lo shopping",
+    "subtotal": "Subtotale",
+    "shipping": "Spedizione",
+    "total": "Totale",
+    "checkout": "Procedi al checkout",
+    "remove": "Rimuovi",
+    "quantity": "Quantita"
+  },
+  "footer": {
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "terms": "Termini di servizio",
+    "privacy": "Privacy policy",
+    "shipping": "Info spedizione",
+    "returns": "Resi",
+    "copyright": "© 2024 AliWarehouses EU. Tutti i diritti riservati."
+  }
+}

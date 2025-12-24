@@ -7,7 +7,34 @@
     "search": "Sök",
     "searchPlaceholder": "Sök produkter...",
     "viewAll": "Visa alla",
-    "learnMore": "Läs mer"
+    "learnMore": "Läs mer",
+    "reset": "Återställ",
+    "apply": "Tillämpa",
+    "showFilters": "Visa filter",
+    "hideFilters": "Dölj filter"
+  },
+  "filters": {
+    "title": "Filter",
+    "price": "Pris",
+    "priceRange": "Prisintervall",
+    "minPrice": "Min pris",
+    "maxPrice": "Max pris",
+    "availability": "Tillgänglighet",
+    "inStockOnly": "Endast i lager",
+    "allProducts": "Alla produkter",
+    "sort": "Sortera efter",
+    "sortOptions": {
+      "featured": "Utvalda",
+      "priceLowHigh": "Pris: stigande",
+      "priceHighLow": "Pris: fallande",
+      "newest": "Nyaste",
+      "bestSelling": "Bästsäljande"
+    },
+    "category": "Kategori",
+    "allCategories": "Alla kategorier",
+    "resultsCount": "{count} produkter",
+    "noResults": "Inga produkter matchar dina filter",
+    "clearAll": "Rensa alla filter"
   },
   "nav": {
     "home": "Hem",

@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Byrza dostavka v ES",
+    "loading": "Zarezhdane...",
+    "error": "Neshto se obyrka",
+    "search": "Tyrsene",
+    "searchPlaceholder": "Tyrsene na produkti...",
+    "viewAll": "Vizh vsichko",
+    "learnMore": "Nauchi poveche",
+    "reset": "Нулиране",
+    "apply": "Приложи",
+    "showFilters": "Покажи филтри",
+    "hideFilters": "Скрий филтри"
+  },
+  "filters": {
+    "title": "Филтри",
+    "price": "Цена",
+    "priceRange": "Ценови диапазон",
+    "minPrice": "Мин цена",
+    "maxPrice": "Макс цена",
+    "availability": "Наличност",
+    "inStockOnly": "Само налични",
+    "allProducts": "Всички продукти",
+    "sort": "Сортирай по",
+    "sortOptions": {
+      "featured": "Препоръчани",
+      "priceLowHigh": "Цена: възходящо",
+      "priceHighLow": "Цена: низходящо",
+      "newest": "Най-нови",
+      "bestSelling": "Най-продавани"
+    },
+    "category": "Категория",
+    "allCategories": "Всички категории",
+    "resultsCount": "{count} продукта",
+    "noResults": "Няма продукти, отговарящи на филтрите",
+    "clearAll": "Изчисти всички филтри"
+  },
+  "nav": {
+    "home": "Nachalo",
+    "products": "Produkti",
+    "collections": "Kolektsii",
+    "cart": "Количка",
+    "account": "Акаунт"
+  },
+  "categories": {
+    "homeDecor": "Интериорна декорация",
+    "lighting": "Осветление",
+    "furniture": "Мебели",
+    "garden": "Градина",
+    "beauty": "Козметични продукти",
+    "beautyEquipment": "Оборудване за грижа за тялото",
+    "solarEnergy": "Възобновяема енергия",
+    "toys": "Играчки",
+    "pets": "Домашни любимци",
+    "sports": "Спорт и свободно време"
+  },
+  "home": {
+    "hero": {
+      "title": "Премиум продукти, доставка в ЕС",
+      "subtitle": "Пазарувайте качествени продукти от проверени ЕС складове с бърза доставка в цяла Европа",
+      "cta": "Пазарувай сега"
+    },
+    "featured": {
+      "title": "Препоръчани продукти",
+      "subtitle": "Нашите най-популярни артикули"
+    },
+    "categories": {
+      "title": "Пазарувай по категория",
+      "subtitle": "Намери това, от което имаш нужда"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Бърза ЕС доставка",
+        "description": "Доставка за 3-7 работни дни"
+      },
+      "quality": {
+        "title": "Гарантирано качество",
+        "description": "Само проверени доставчици"
+      },
+      "support": {
+        "title": "ЕС поддръжка",
+        "description": "Обслужване на клиенти на вашия език"
+      },
+      "returns": {
+        "title": "Лесни връщания",
+        "description": "30-дневна политика за връщане"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Добави в количката",
+    "buyNow": "Купи сега",
+    "outOfStock": "Изчерпано",
+    "inStock": "В наличност",
+    "description": "Описание",
+    "details": "Детайли",
+    "reviews": "Отзиви",
+    "relatedProducts": "Свързани продукти",
+    "shipsFrom": "Изпращане от ЕС",
+    "freeShipping": "Безплатна доставка над 75 EUR",
+    "usage": "Употреба",
+    "specifications": "Спецификации",
+    "dimensions": "Размери",
+    "packageInfo": "Информация за пакета",
+    "style": "Стил",
+    "material": "Материал",
+    "color": "Цвят",
+    "process": "Процес",
+    "installationType": "Тип инсталация",
+    "indoorOutdoor": "Вътрешен/Външен",
+    "productSize": "Размер на продукта",
+    "packageSize": "Размер на пакета",
+    "weight": "Тегло",
+    "packageContents": "Съдържание на пакета",
+    "originCountry": "Страна на произход",
+    "deliveryTime": "Очаквано време за доставка"
+  },
+  "cart": {
+    "title": "Вашата количка",
+    "empty": "Количката ви е празна",
+    "continueShopping": "Продължи пазаруването",
+    "subtotal": "Междинна сума",
+    "shipping": "Доставка",
+    "total": "Общо",
+    "checkout": "Към плащане",
+    "remove": "Премахни",
+    "quantity": "Количество"
+  },
+  "footer": {
+    "about": "За нас",
+    "contact": "Контакт",
+    "terms": "Общи условия",
+    "privacy": "Политика за поверителност",
+    "shipping": "Информация за доставка",
+    "returns": "Връщания",
+    "copyright": "© 2024 AliWarehouses EU. Всички права запазени."
+  }
+}

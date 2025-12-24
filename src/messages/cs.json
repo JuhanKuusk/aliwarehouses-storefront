@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Rychle doruceni v EU",
+    "loading": "Nacitani...",
+    "error": "Neco se pokazilo",
+    "search": "Hledat",
+    "searchPlaceholder": "Hledat produkty...",
+    "viewAll": "Zobrazit vse",
+    "learnMore": "Vice informaci",
+    "reset": "Obnovit",
+    "apply": "Použít",
+    "showFilters": "Zobrazit filtry",
+    "hideFilters": "Skrýt filtry"
+  },
+  "filters": {
+    "title": "Filtry",
+    "price": "Cena",
+    "priceRange": "Cenové rozmezí",
+    "minPrice": "Min cena",
+    "maxPrice": "Max cena",
+    "availability": "Dostupnost",
+    "inStockOnly": "Pouze skladem",
+    "allProducts": "Všechny produkty",
+    "sort": "Seřadit podle",
+    "sortOptions": {
+      "featured": "Doporučené",
+      "priceLowHigh": "Cena: vzestupně",
+      "priceHighLow": "Cena: sestupně",
+      "newest": "Nejnovější",
+      "bestSelling": "Nejprodávanější"
+    },
+    "category": "Kategorie",
+    "allCategories": "Všechny kategorie",
+    "resultsCount": "{count} produktů",
+    "noResults": "Žádné produkty neodpovídají vašim filtrům",
+    "clearAll": "Vymazat všechny filtry"
+  },
+  "nav": {
+    "home": "Domu",
+    "products": "Produkty",
+    "collections": "Kolekce",
+    "cart": "Kosik",
+    "account": "Ucet"
+  },
+  "categories": {
+    "homeDecor": "Bytove dekorace",
+    "lighting": "Osvetleni",
+    "furniture": "Nabytek",
+    "garden": "Zahrada",
+    "beauty": "Kosmeticke produkty",
+    "beautyEquipment": "Pece o telo",
+    "solarEnergy": "Obnovitelna energie",
+    "toys": "Hracky",
+    "pets": "Domaci mazlicci",
+    "sports": "Sport a volny cas"
+  },
+  "home": {
+    "hero": {
+      "title": "Premi produkty, doruceni v EU",
+      "subtitle": "Nakupujte kvalitni produkty z overenych EU skladu s rychlym dorucenim po cele Evrope",
+      "cta": "Nakoupit"
+    },
+    "featured": {
+      "title": "Doporucene produkty",
+      "subtitle": "Nase nejoblibenejsi produkty"
+    },
+    "categories": {
+      "title": "Nakupovat podle kategorie",
+      "subtitle": "Najdete, co potrebujete"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Rychle doruceni v EU",
+        "description": "Doruceni za 3-7 pracovnich dni"
+      },
+      "quality": {
+        "title": "Zarucena kvalita",
+        "description": "Pouze overeni dodavatele"
+      },
+      "support": {
+        "title": "Podpora v EU",
+        "description": "Zakaznicka podpora ve vasem jazyce"
+      },
+      "returns": {
+        "title": "Snadne vraceni",
+        "description": "30denni politika vraceni"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Pridat do kosiku",
+    "buyNow": "Koupit",
+    "outOfStock": "Neni skladem",
+    "inStock": "Skladem",
+    "description": "Popis",
+    "details": "Podrobnosti",
+    "reviews": "Recenze",
+    "relatedProducts": "Souvisejici produkty",
+    "shipsFrom": "Odesilame z EU",
+    "freeShipping": "Doprava zdarma nad 75 EUR",
+    "usage": "Pouziti",
+    "specifications": "Specifikace",
+    "dimensions": "Rozmery",
+    "packageInfo": "Informace o baleni",
+    "style": "Styl",
+    "material": "Material",
+    "color": "Barva",
+    "process": "Proces",
+    "installationType": "Typ instalace",
+    "indoorOutdoor": "Vnitrni/Venkovni",
+    "productSize": "Velikost produktu",
+    "packageSize": "Velikost baleni",
+    "weight": "Hmotnost",
+    "packageContents": "Obsah baleni",
+    "originCountry": "Zeme puvodu",
+    "deliveryTime": "Odhadovana doba doruceni"
+  },
+  "cart": {
+    "title": "Vas kosik",
+    "empty": "Vas kosik je prazdny",
+    "continueShopping": "Pokracovat v nakupu",
+    "subtotal": "Mezisouce",
+    "shipping": "Doprava",
+    "total": "Celkem",
+    "checkout": "K pokladne",
+    "remove": "Odebrat",
+    "quantity": "Mnozstvi"
+  },
+  "footer": {
+    "about": "O nas",
+    "contact": "Kontakt",
+    "terms": "Obchodni podminky",
+    "privacy": "Zasady ochrany osobnich udaju",
+    "shipping": "Informace o doprave",
+    "returns": "Vraceni zbozi",
+    "copyright": "© 2024 AliWarehouses EU. Vsechna prava vyhrazena."
+  }
+}

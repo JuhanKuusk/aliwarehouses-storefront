@@ -7,7 +7,34 @@
     "search": "Pesquisar",
     "searchPlaceholder": "Pesquisar produtos...",
     "viewAll": "Ver tudo",
-    "learnMore": "Saber mais"
+    "learnMore": "Saber mais",
+    "reset": "Redefinir",
+    "apply": "Aplicar",
+    "showFilters": "Mostrar filtros",
+    "hideFilters": "Ocultar filtros"
+  },
+  "filters": {
+    "title": "Filtros",
+    "price": "Preço",
+    "priceRange": "Intervalo de preços",
+    "minPrice": "Preço mín",
+    "maxPrice": "Preço máx",
+    "availability": "Disponibilidade",
+    "inStockOnly": "Apenas em stock",
+    "allProducts": "Todos os produtos",
+    "sort": "Ordenar por",
+    "sortOptions": {
+      "featured": "Destaques",
+      "priceLowHigh": "Preço: crescente",
+      "priceHighLow": "Preço: decrescente",
+      "newest": "Mais recente",
+      "bestSelling": "Mais vendidos"
+    },
+    "category": "Categoria",
+    "allCategories": "Todas as categorias",
+    "resultsCount": "{count} produtos",
+    "noResults": "Nenhum produto corresponde aos seus filtros",
+    "clearAll": "Limpar todos os filtros"
   },
   "nav": {
     "home": "Início",

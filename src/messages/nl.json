@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Snelle EU verzending",
+    "loading": "Laden...",
+    "error": "Er is iets misgegaan",
+    "search": "Zoeken",
+    "searchPlaceholder": "Producten zoeken...",
+    "viewAll": "Alles bekijken",
+    "learnMore": "Meer informatie",
+    "reset": "Resetten",
+    "apply": "Toepassen",
+    "showFilters": "Filters tonen",
+    "hideFilters": "Filters verbergen"
+  },
+  "filters": {
+    "title": "Filters",
+    "price": "Prijs",
+    "priceRange": "Prijsbereik",
+    "minPrice": "Min prijs",
+    "maxPrice": "Max prijs",
+    "availability": "Beschikbaarheid",
+    "inStockOnly": "Alleen op voorraad",
+    "allProducts": "Alle producten",
+    "sort": "Sorteren op",
+    "sortOptions": {
+      "featured": "Uitgelicht",
+      "priceLowHigh": "Prijs: laag naar hoog",
+      "priceHighLow": "Prijs: hoog naar laag",
+      "newest": "Nieuwste",
+      "bestSelling": "Bestverkocht"
+    },
+    "category": "Categorie",
+    "allCategories": "Alle categorieën",
+    "resultsCount": "{count} producten",
+    "noResults": "Geen producten komen overeen met je filters",
+    "clearAll": "Alle filters wissen"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Producten",
+    "collections": "Collecties",
+    "cart": "Winkelwagen",
+    "account": "Account"
+  },
+  "categories": {
+    "homeDecor": "Woondecoratie",
+    "lighting": "Verlichting",
+    "furniture": "Meubels",
+    "garden": "Tuin",
+    "beauty": "Beautyproducten",
+    "beautyEquipment": "Lichaamsverzorgingsapparatuur",
+    "solarEnergy": "Hernieuwbare energie",
+    "toys": "Speelgoed",
+    "pets": "Huisdieren",
+    "sports": "Sport en vrije tijd"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium producten, EU levering",
+      "subtitle": "Shop kwaliteitsproducten van geverifieerde EU-magazijnen met snelle verzending door heel Europa",
+      "cta": "Nu winkelen"
+    },
+    "featured": {
+      "title": "Uitgelichte producten",
+      "subtitle": "Onze populairste artikelen"
+    },
+    "categories": {
+      "title": "Shop per categorie",
+      "subtitle": "Vind wat je nodig hebt"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Snelle EU verzending",
+        "description": "Levering binnen 3-7 werkdagen"
+      },
+      "quality": {
+        "title": "Kwaliteit gegarandeerd",
+        "description": "Alleen geverifieerde leveranciers"
+      },
+      "support": {
+        "title": "EU ondersteuning",
+        "description": "Klantenservice in jouw taal"
+      },
+      "returns": {
+        "title": "Eenvoudig retourneren",
+        "description": "30 dagen retourbeleid"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "In winkelwagen",
+    "buyNow": "Nu kopen",
+    "outOfStock": "Niet op voorraad",
+    "inStock": "Op voorraad",
+    "description": "Beschrijving",
+    "details": "Details",
+    "reviews": "Beoordelingen",
+    "relatedProducts": "Gerelateerde producten",
+    "shipsFrom": "Verzending vanuit EU",
+    "freeShipping": "Gratis verzending boven 75 EUR",
+    "usage": "Gebruik",
+    "specifications": "Specificaties",
+    "dimensions": "Afmetingen",
+    "packageInfo": "Pakketinformatie",
+    "style": "Stijl",
+    "material": "Materiaal",
+    "color": "Kleur",
+    "process": "Proces",
+    "installationType": "Installatietype",
+    "indoorOutdoor": "Binnen/Buiten",
+    "productSize": "Productgrootte",
+    "packageSize": "Pakketgrootte",
+    "weight": "Gewicht",
+    "packageContents": "Pakketinhoud",
+    "originCountry": "Land van herkomst",
+    "deliveryTime": "Geschatte levertijd"
+  },
+  "cart": {
+    "title": "Jouw winkelwagen",
+    "empty": "Je winkelwagen is leeg",
+    "continueShopping": "Verder winkelen",
+    "subtotal": "Subtotaal",
+    "shipping": "Verzending",
+    "total": "Totaal",
+    "checkout": "Afrekenen",
+    "remove": "Verwijderen",
+    "quantity": "Aantal"
+  },
+  "footer": {
+    "about": "Over ons",
+    "contact": "Contact",
+    "terms": "Algemene voorwaarden",
+    "privacy": "Privacybeleid",
+    "shipping": "Verzendinfo",
+    "returns": "Retourneren",
+    "copyright": "© 2024 AliWarehouses EU. Alle rechten voorbehouden."
+  }
+}

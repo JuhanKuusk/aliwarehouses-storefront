@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Livrare rapida in UE",
+    "loading": "Se incarca...",
+    "error": "Ceva nu a mers bine",
+    "search": "Cauta",
+    "searchPlaceholder": "Cauta produse...",
+    "viewAll": "Vezi tot",
+    "learnMore": "Afla mai mult",
+    "reset": "Resetare",
+    "apply": "Aplică",
+    "showFilters": "Arată filtre",
+    "hideFilters": "Ascunde filtre"
+  },
+  "filters": {
+    "title": "Filtre",
+    "price": "Preț",
+    "priceRange": "Interval de preț",
+    "minPrice": "Preț min",
+    "maxPrice": "Preț max",
+    "availability": "Disponibilitate",
+    "inStockOnly": "Doar în stoc",
+    "allProducts": "Toate produsele",
+    "sort": "Sortează după",
+    "sortOptions": {
+      "featured": "Recomandate",
+      "priceLowHigh": "Preț: crescător",
+      "priceHighLow": "Preț: descrescător",
+      "newest": "Cele mai noi",
+      "bestSelling": "Cele mai vândute"
+    },
+    "category": "Categorie",
+    "allCategories": "Toate categoriile",
+    "resultsCount": "{count} produse",
+    "noResults": "Niciun produs nu corespunde filtrelor tale",
+    "clearAll": "Șterge toate filtrele"
+  },
+  "nav": {
+    "home": "Acasa",
+    "products": "Produse",
+    "collections": "Colectii",
+    "cart": "Cos",
+    "account": "Cont"
+  },
+  "categories": {
+    "homeDecor": "Decoratiuni casa",
+    "lighting": "Iluminat",
+    "furniture": "Mobila",
+    "garden": "Gradina",
+    "beauty": "Produse de frumusete",
+    "beautyEquipment": "Echipamente ingrijire corporala",
+    "solarEnergy": "Energie regenerabila",
+    "toys": "Jucarii",
+    "pets": "Animale de companie",
+    "sports": "Sport si timp liber"
+  },
+  "home": {
+    "hero": {
+      "title": "Produse premium, livrare in UE",
+      "subtitle": "Cumpara produse de calitate din depozite UE verificate cu livrare rapida in toata Europa",
+      "cta": "Cumpara acum"
+    },
+    "featured": {
+      "title": "Produse recomandate",
+      "subtitle": "Cele mai populare produse"
+    },
+    "categories": {
+      "title": "Cumpara dupa categorie",
+      "subtitle": "Gaseste ce ai nevoie"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Livrare rapida UE",
+        "description": "Livrare in 3-7 zile lucratoare"
+      },
+      "quality": {
+        "title": "Calitate garantata",
+        "description": "Doar furnizori verificati"
+      },
+      "support": {
+        "title": "Suport UE",
+        "description": "Serviciu clienti in limba ta"
+      },
+      "returns": {
+        "title": "Retururi usoare",
+        "description": "Politica de retur de 30 zile"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Adauga in cos",
+    "buyNow": "Cumpara acum",
+    "outOfStock": "Stoc epuizat",
+    "inStock": "In stoc",
+    "description": "Descriere",
+    "details": "Detalii",
+    "reviews": "Recenzii",
+    "relatedProducts": "Produse similare",
+    "shipsFrom": "Expediere din UE",
+    "freeShipping": "Livrare gratuita peste 75 EUR",
+    "usage": "Utilizare",
+    "specifications": "Specificatii",
+    "dimensions": "Dimensiuni",
+    "packageInfo": "Informatii pachet",
+    "style": "Stil",
+    "material": "Material",
+    "color": "Culoare",
+    "process": "Proces",
+    "installationType": "Tip instalare",
+    "indoorOutdoor": "Interior/Exterior",
+    "productSize": "Dimensiune produs",
+    "packageSize": "Dimensiune pachet",
+    "weight": "Greutate",
+    "packageContents": "Continut pachet",
+    "originCountry": "Tara de origine",
+    "deliveryTime": "Timp estimat de livrare"
+  },
+  "cart": {
+    "title": "Cosul tau",
+    "empty": "Cosul tau este gol",
+    "continueShopping": "Continua cumparaturile",
+    "subtotal": "Subtotal",
+    "shipping": "Livrare",
+    "total": "Total",
+    "checkout": "Finalizeaza comanda",
+    "remove": "Sterge",
+    "quantity": "Cantitate"
+  },
+  "footer": {
+    "about": "Despre noi",
+    "contact": "Contact",
+    "terms": "Termeni si conditii",
+    "privacy": "Politica de confidentialitate",
+    "shipping": "Informatii livrare",
+    "returns": "Retururi",
+    "copyright": "© 2024 AliWarehouses EU. Toate drepturile rezervate."
+  }
+}

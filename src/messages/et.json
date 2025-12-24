@@ -7,7 +7,34 @@
     "search": "Otsi",
     "searchPlaceholder": "Otsi tooteid...",
     "viewAll": "Vaata kõiki",
-    "learnMore": "Loe lähemalt"
+    "learnMore": "Loe lähemalt",
+    "reset": "Lähtesta",
+    "apply": "Rakenda",
+    "showFilters": "Näita filtreid",
+    "hideFilters": "Peida filtrid"
+  },
+  "filters": {
+    "title": "Filtrid",
+    "price": "Hind",
+    "priceRange": "Hinnavahemik",
+    "minPrice": "Min hind",
+    "maxPrice": "Max hind",
+    "availability": "Saadavus",
+    "inStockOnly": "Ainult laos",
+    "allProducts": "Kõik tooted",
+    "sort": "Sorteeri",
+    "sortOptions": {
+      "featured": "Esiletõstetud",
+      "priceLowHigh": "Hind: madalaim kõigepealt",
+      "priceHighLow": "Hind: kõrgeim kõigepealt",
+      "newest": "Uusimad",
+      "bestSelling": "Enimmüüdud"
+    },
+    "category": "Kategooria",
+    "allCategories": "Kõik kategooriad",
+    "resultsCount": "{count} toodet",
+    "noResults": "Filtritele vastavaid tooteid ei leitud",
+    "clearAll": "Tühjenda kõik filtrid"
   },
   "nav": {
     "home": "Avaleht",

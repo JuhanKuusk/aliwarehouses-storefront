@@ -7,7 +7,34 @@
     "search": "Ieškoti",
     "searchPlaceholder": "Ieškoti produktų...",
     "viewAll": "Peržiūrėti visus",
-    "learnMore": "Sužinoti daugiau"
+    "learnMore": "Sužinoti daugiau",
+    "reset": "Atstatyti",
+    "apply": "Taikyti",
+    "showFilters": "Rodyti filtrus",
+    "hideFilters": "Slėpti filtrus"
+  },
+  "filters": {
+    "title": "Filtrai",
+    "price": "Kaina",
+    "priceRange": "Kainų intervalas",
+    "minPrice": "Min kaina",
+    "maxPrice": "Max kaina",
+    "availability": "Prieinamumas",
+    "inStockOnly": "Tik sandėlyje",
+    "allProducts": "Visi produktai",
+    "sort": "Rūšiuoti pagal",
+    "sortOptions": {
+      "featured": "Rekomenduojami",
+      "priceLowHigh": "Kaina: didėjančia tvarka",
+      "priceHighLow": "Kaina: mažėjančia tvarka",
+      "newest": "Naujausi",
+      "bestSelling": "Perkamiausios"
+    },
+    "category": "Kategorija",
+    "allCategories": "Visos kategorijos",
+    "resultsCount": "{count} produktai",
+    "noResults": "Nėra produktų, atitinkančių filtrus",
+    "clearAll": "Išvalyti visus filtrus"
   },
   "nav": {
     "home": "Pradžia",

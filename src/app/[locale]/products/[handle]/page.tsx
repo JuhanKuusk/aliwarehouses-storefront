@@ -85,8 +85,8 @@ function ProductContent({
   const hasDimensions = translation?.product_size || translation?.package_size || translation?.weight;
   const hasPackageInfo = translation?.package_contents || translation?.origin_country;
 
-  const images = product.images.edges.map((edge) => edge.node);
-  const variants = product.variants.edges.map((edge) => edge.node);
+  const images = product.images?.edges?.map((edge) => edge.node) || [];
+  const variants = product.variants?.edges?.map((edge) => edge.node) || [];
   const firstVariant = variants[0];
   const hasDiscount = firstVariant?.compareAtPrice &&
     parseFloat(firstVariant.compareAtPrice.amount) > parseFloat(firstVariant.price.amount);
@@ -172,7 +172,7 @@ function ProductContent({
             </div>
 
             {/* Variants */}
-            {product.options.length > 0 && product.options[0].values.length > 1 && (
+            {product.options && product.options.length > 0 && product.options[0]?.values && product.options[0].values.length > 1 && (
               <div className="mt-8">
                 <h3 className="text-sm font-medium text-gray-900 dark:text-white">{product.options[0].name}</h3>
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -301,7 +301,7 @@ function ProductContent({
             )}
 
             {/* Tags */}
-            {product.tags.length > 0 && (
+            {product.tags && product.tags.length > 0 && (
               <div className="mt-8 flex flex-wrap gap-2">
                 {product.tags.map((tag) => (
                   <span

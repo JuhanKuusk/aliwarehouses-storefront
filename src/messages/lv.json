@@ -7,7 +7,34 @@
     "search": "Meklēt",
     "searchPlaceholder": "Meklēt produktus...",
     "viewAll": "Skatīt visus",
-    "learnMore": "Uzzināt vairāk"
+    "learnMore": "Uzzināt vairāk",
+    "reset": "Atiestatīt",
+    "apply": "Lietot",
+    "showFilters": "Rādīt filtrus",
+    "hideFilters": "Slēpt filtrus"
+  },
+  "filters": {
+    "title": "Filtri",
+    "price": "Cena",
+    "priceRange": "Cenu diapazons",
+    "minPrice": "Min cena",
+    "maxPrice": "Max cena",
+    "availability": "Pieejamība",
+    "inStockOnly": "Tikai noliktavā",
+    "allProducts": "Visi produkti",
+    "sort": "Kārtot pēc",
+    "sortOptions": {
+      "featured": "Ieteicamie",
+      "priceLowHigh": "Cena: augoša",
+      "priceHighLow": "Cena: dilstoša",
+      "newest": "Jaunākie",
+      "bestSelling": "Vispirktākie"
+    },
+    "category": "Kategorija",
+    "allCategories": "Visas kategorijas",
+    "resultsCount": "{count} produkti",
+    "noResults": "Nav produktu, kas atbilst filtriem",
+    "clearAll": "Notīrīt visus filtrus"
   },
   "nav": {
     "home": "Sākums",

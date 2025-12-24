@@ -7,7 +7,34 @@
     "search": "Поиск",
     "searchPlaceholder": "Поиск товаров...",
     "viewAll": "Смотреть все",
-    "learnMore": "Узнать больше"
+    "learnMore": "Узнать больше",
+    "reset": "Сбросить",
+    "apply": "Применить",
+    "showFilters": "Показать фильтры",
+    "hideFilters": "Скрыть фильтры"
+  },
+  "filters": {
+    "title": "Фильтры",
+    "price": "Цена",
+    "priceRange": "Диапазон цен",
+    "minPrice": "Мин цена",
+    "maxPrice": "Макс цена",
+    "availability": "Наличие",
+    "inStockOnly": "Только в наличии",
+    "allProducts": "Все товары",
+    "sort": "Сортировать по",
+    "sortOptions": {
+      "featured": "Рекомендуемые",
+      "priceLowHigh": "Цена: по возрастанию",
+      "priceHighLow": "Цена: по убыванию",
+      "newest": "Новинки",
+      "bestSelling": "Бестселлеры"
+    },
+    "category": "Категория",
+    "allCategories": "Все категории",
+    "resultsCount": "{count} товаров",
+    "noResults": "Нет товаров, соответствующих фильтрам",
+    "clearAll": "Очистить все фильтры"
   },
   "nav": {
     "home": "Главная",

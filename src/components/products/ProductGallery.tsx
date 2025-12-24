@@ -19,9 +19,9 @@ interface ProductGalleryProps {
 
 export default function ProductGallery({ images, title }: ProductGalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const selectedImage = images[selectedIndex];
 
-  if (images.length === 0) {
+  // Handle undefined or empty images array
+  if (!images || images.length === 0) {
     return (
       <div className="aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-white/10">
         <div className="flex h-full items-center justify-center text-gray-400 dark:text-gray-600">
@@ -38,6 +38,8 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
     );
   }
 
+  const selectedImage = images[selectedIndex];
+
   return (
     <div className="space-y-4">
       {/* Main Image */}
@@ -52,8 +54,8 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
             className="absolute inset-0"
           >
             <Image
-              src={selectedImage.url}
-              alt={selectedImage.altText || title}
+              src={selectedImage?.url || ''}
+              alt={selectedImage?.altText || title}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"

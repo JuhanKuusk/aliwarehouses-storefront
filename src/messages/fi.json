@@ -7,7 +7,34 @@
     "search": "Hae",
     "searchPlaceholder": "Hae tuotteita...",
     "viewAll": "Näytä kaikki",
-    "learnMore": "Lue lisää"
+    "learnMore": "Lue lisää",
+    "reset": "Nollaa",
+    "apply": "Käytä",
+    "showFilters": "Näytä suodattimet",
+    "hideFilters": "Piilota suodattimet"
+  },
+  "filters": {
+    "title": "Suodattimet",
+    "price": "Hinta",
+    "priceRange": "Hintaväli",
+    "minPrice": "Min hinta",
+    "maxPrice": "Max hinta",
+    "availability": "Saatavuus",
+    "inStockOnly": "Vain varastossa",
+    "allProducts": "Kaikki tuotteet",
+    "sort": "Lajittele",
+    "sortOptions": {
+      "featured": "Suositut",
+      "priceLowHigh": "Hinta: nouseva",
+      "priceHighLow": "Hinta: laskeva",
+      "newest": "Uusimmat",
+      "bestSelling": "Myydyimmät"
+    },
+    "category": "Kategoria",
+    "allCategories": "Kaikki kategoriat",
+    "resultsCount": "{count} tuotetta",
+    "noResults": "Ei suodattimia vastaavia tuotteita",
+    "clearAll": "Tyhjennä kaikki suodattimet"
   },
   "nav": {
     "home": "Etusivu",

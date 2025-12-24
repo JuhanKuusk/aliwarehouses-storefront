@@ -1,0 +1,139 @@
+{
+  "common": {
+    "brand": "AliWarehouses EU",
+    "tagline": "Grigori apostoli stin EE",
+    "loading": "Fortosi...",
+    "error": "Kati pige strava",
+    "search": "Anazitisi",
+    "searchPlaceholder": "Anazitisi proionton...",
+    "viewAll": "Deite ola",
+    "learnMore": "Mathete perissotero",
+    "reset": "Επαναφορά",
+    "apply": "Εφαρμογή",
+    "showFilters": "Εμφάνιση φίλτρων",
+    "hideFilters": "Απόκρυψη φίλτρων"
+  },
+  "filters": {
+    "title": "Φίλτρα",
+    "price": "Τιμή",
+    "priceRange": "Εύρος τιμών",
+    "minPrice": "Ελάχ τιμή",
+    "maxPrice": "Μέγ τιμή",
+    "availability": "Διαθεσιμότητα",
+    "inStockOnly": "Μόνο σε απόθεμα",
+    "allProducts": "Όλα τα προϊόντα",
+    "sort": "Ταξινόμηση κατά",
+    "sortOptions": {
+      "featured": "Προτεινόμενα",
+      "priceLowHigh": "Τιμή: αύξουσα",
+      "priceHighLow": "Τιμή: φθίνουσα",
+      "newest": "Νεότερα",
+      "bestSelling": "Ευπώλητα"
+    },
+    "category": "Κατηγορία",
+    "allCategories": "Όλες οι κατηγορίες",
+    "resultsCount": "{count} προϊόντα",
+    "noResults": "Δεν υπάρχουν προϊόντα που να ταιριάζουν στα φίλτρα σας",
+    "clearAll": "Εκκαθάριση όλων των φίλτρων"
+  },
+  "nav": {
+    "home": "Αρχική",
+    "products": "Προϊόντα",
+    "collections": "Συλλογές",
+    "cart": "Καλάθι",
+    "account": "Λογαριασμός"
+  },
+  "categories": {
+    "homeDecor": "Διακόσμηση σπιτιού",
+    "lighting": "Φωτισμός",
+    "furniture": "Έπιπλα",
+    "garden": "Κήπος",
+    "beauty": "Προϊόντα ομορφιάς",
+    "beautyEquipment": "Εξοπλισμός περιποίησης σώματος",
+    "solarEnergy": "Ανανεώσιμη ενέργεια",
+    "toys": "Παιχνίδια",
+    "pets": "Κατοικίδια",
+    "sports": "Αθλητισμός και αναψυχή"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium προϊόντα, παράδοση στην ΕΕ",
+      "subtitle": "Αγοράστε ποιοτικά προϊόντα από επαληθευμένες αποθήκες της ΕΕ με γρήγορη αποστολή σε όλη την Ευρώπη",
+      "cta": "Αγοράστε τώρα"
+    },
+    "featured": {
+      "title": "Προτεινόμενα προϊόντα",
+      "subtitle": "Τα πιο δημοφιλή μας προϊόντα"
+    },
+    "categories": {
+      "title": "Αγορά ανά κατηγορία",
+      "subtitle": "Βρείτε αυτό που χρειάζεστε"
+    },
+    "benefits": {
+      "shipping": {
+        "title": "Γρήγορη αποστολή ΕΕ",
+        "description": "Παράδοση σε 3-7 εργάσιμες ημέρες"
+      },
+      "quality": {
+        "title": "Εγγυημένη ποιότητα",
+        "description": "Μόνο επαληθευμένοι προμηθευτές"
+      },
+      "support": {
+        "title": "Υποστήριξη ΕΕ",
+        "description": "Εξυπηρέτηση πελατών στη γλώσσα σας"
+      },
+      "returns": {
+        "title": "Εύκολες επιστροφές",
+        "description": "Πολιτική επιστροφής 30 ημερών"
+      }
+    }
+  },
+  "product": {
+    "addToCart": "Προσθήκη στο καλάθι",
+    "buyNow": "Αγορά τώρα",
+    "outOfStock": "Εξαντλημένο",
+    "inStock": "Σε απόθεμα",
+    "description": "Περιγραφή",
+    "details": "Λεπτομέρειες",
+    "reviews": "Κριτικές",
+    "relatedProducts": "Σχετικά προϊόντα",
+    "shipsFrom": "Αποστολή από την ΕΕ",
+    "freeShipping": "Δωρεάν αποστολή άνω των 75 EUR",
+    "usage": "Χρήση",
+    "specifications": "Προδιαγραφές",
+    "dimensions": "Διαστάσεις",
+    "packageInfo": "Πληροφορίες πακέτου",
+    "style": "Στυλ",
+    "material": "Υλικό",
+    "color": "Χρώμα",
+    "process": "Διαδικασία",
+    "installationType": "Τύπος εγκατάστασης",
+    "indoorOutdoor": "Εσωτερικού/Εξωτερικού χώρου",
+    "productSize": "Μέγεθος προϊόντος",
+    "packageSize": "Μέγεθος πακέτου",
+    "weight": "Βάρος",
+    "packageContents": "Περιεχόμενα πακέτου",
+    "originCountry": "Χώρα προέλευσης",
+    "deliveryTime": "Εκτιμώμενος χρόνος παράδοσης"
+  },
+  "cart": {
+    "title": "Το καλάθι σας",
+    "empty": "Το καλάθι σας είναι άδειο",
+    "continueShopping": "Συνέχεια αγορών",
+    "subtotal": "Υποσύνολο",
+    "shipping": "Αποστολή",
+    "total": "Σύνολο",
+    "checkout": "Ολοκλήρωση παραγγελίας",
+    "remove": "Αφαίρεση",
+    "quantity": "Ποσότητα"
+  },
+  "footer": {
+    "about": "Σχετικά με εμάς",
+    "contact": "Επικοινωνία",
+    "terms": "Όροι χρήσης",
+    "privacy": "Πολιτική απορρήτου",
+    "shipping": "Πληροφορίες αποστολής",
+    "returns": "Επιστροφές",
+    "copyright": "© 2024 AliWarehouses EU. Με επιφύλαξη παντός δικαιώματος."
+  }
+}
