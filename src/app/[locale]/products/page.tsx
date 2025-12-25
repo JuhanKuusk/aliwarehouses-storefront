@@ -5,7 +5,8 @@ import { getTranslationsForProducts, type ProductTranslation } from "@/lib/supab
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
-import ProductFilters, { applyFilters, type FilterState, type SortOption } from "@/components/products/ProductFilters";
+import ProductFilters from "@/components/products/ProductFilters";
+import { applyFilters, type FilterState, type SortOption } from "@/lib/utils/filters";
 import type { Locale } from "@/i18n/routing";
 
 // Force dynamic rendering to always fetch fresh products
