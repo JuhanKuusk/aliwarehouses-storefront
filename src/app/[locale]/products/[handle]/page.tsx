@@ -1,13 +1,14 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { getProductByHandle, getProducts } from "@/lib/shopify";
-import { getTranslation, type ProductTranslation } from "@/lib/supabase/translations";
-import { notFound } from "next/navigation";
+import { getTranslation, getTranslationBySlug, type ProductTranslation } from "@/lib/supabase/translations";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import ProductGallery from "@/components/products/ProductGallery";
 import Navbar from "@/components/layout/Navbar";
 import AddToCartButton from "@/components/products/AddToCartButton";
 import type { Locale } from "@/i18n/routing";
+import { localizedPaths } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string; handle: string }>;
@@ -25,14 +26,27 @@ export async function generateStaticParams() {
 }
 
 export default async function ProductPage({ params }: Props) {
-  const { locale, handle } = await params;
+  const { locale, handle: slugOrHandle } = await params;
   setRequestLocale(locale);
 
-  // Fetch product from Shopify and translation from Supabase in parallel
-  const [product, translation] = await Promise.all([
-    getProductByHandle(handle),
-    getTranslation(handle, locale),
-  ]);
+  // First, try to find by localized slug
+  let translation = await getTranslationBySlug(slugOrHandle, locale);
+  let shopifyHandle = translation?.shopify_handle;
+
+  // If not found by slug, try as Shopify handle
+  if (!translation) {
+    translation = await getTranslation(slugOrHandle, locale);
+    shopifyHandle = slugOrHandle;
+
+    // If found by Shopify handle and has a localized slug, redirect to localized URL
+    if (translation?.slug && translation.slug !== slugOrHandle) {
+      const localizedPath = localizedPaths.products[locale as Locale] || "products";
+      redirect(`/${locale}/${localizedPath}/${translation.slug}`);
+    }
+  }
+
+  // Fetch product from Shopify
+  const product = await getProductByHandle(shopifyHandle || slugOrHandle);
 
   if (!product) {
     notFound();
