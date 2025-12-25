@@ -202,3 +202,38 @@ export async function getAllTranslationsForLocale(locale: string): Promise<Produ
 
   return data || [];
 }
+
+// Find a slug in any locale and return the shopify_handle and target locale's slug
+export async function findSlugInAnyLocale(slug: string, targetLocale: string): Promise<{
+  shopifyHandle: string;
+  targetSlug: string;
+} | null> {
+  // First, find the slug in any locale to get the shopify_handle
+  const { data: anyLocale, error: anyError } = await supabase
+    .from("product_translations")
+    .select("shopify_handle")
+    .eq("slug", slug)
+    .limit(1)
+    .single();
+
+  if (anyError || !anyLocale) {
+    return null;
+  }
+
+  // Now get the target locale's slug
+  const { data: targetTranslation, error: targetError } = await supabase
+    .from("product_translations")
+    .select("slug")
+    .eq("shopify_handle", anyLocale.shopify_handle)
+    .eq("locale", targetLocale)
+    .single();
+
+  if (targetError || !targetTranslation) {
+    return null;
+  }
+
+  return {
+    shopifyHandle: anyLocale.shopify_handle,
+    targetSlug: targetTranslation.slug,
+  };
+}

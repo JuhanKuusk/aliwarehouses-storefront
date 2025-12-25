@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { getProductByHandle, getProducts } from "@/lib/shopify";
-import { getTranslation, getTranslationBySlug, type ProductTranslation } from "@/lib/supabase/translations";
+import { getTranslation, getTranslationBySlug, findSlugInAnyLocale, type ProductTranslation } from "@/lib/supabase/translations";
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import ProductGallery from "@/components/products/ProductGallery";
@@ -32,11 +32,21 @@ export default async function ProductPage({ params }: Props) {
   const { locale, handle: slugOrHandle } = await params;
   setRequestLocale(locale);
 
-  // First, try to find by localized slug
+  // First, try to find by localized slug for current locale
   let translation = await getTranslationBySlug(slugOrHandle, locale);
   let shopifyHandle = translation?.shopify_handle;
 
-  // If not found by slug, try as Shopify handle
+  // If not found by slug in current locale, check if it's a slug from another locale
+  if (!translation) {
+    const crossLocaleResult = await findSlugInAnyLocale(slugOrHandle, locale);
+    if (crossLocaleResult && crossLocaleResult.targetSlug !== slugOrHandle) {
+      // Redirect to the correct localized URL
+      const localizedPath = localizedPaths.products[locale as Locale] || "products";
+      redirect(`/${locale}/${localizedPath}/${crossLocaleResult.targetSlug}`);
+    }
+  }
+
+  // If still not found, try as Shopify handle
   if (!translation) {
     translation = await getTranslation(slugOrHandle, locale);
     shopifyHandle = slugOrHandle;
