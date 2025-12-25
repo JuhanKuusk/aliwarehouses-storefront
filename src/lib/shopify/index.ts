@@ -40,6 +40,7 @@ export async function getProductByHandle(handle: string): Promise<ShopifyProduct
   }>({
     query: GET_PRODUCT_BY_HANDLE,
     variables: { handle },
+    cache: 'no-store', // Always fetch fresh product data
     tags: ['products', `product-${handle}`],
   });
 

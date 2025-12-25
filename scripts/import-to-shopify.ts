@@ -248,18 +248,41 @@ async function setInventoryLevel(
 }
 
 /**
+ * Normalize image URL - add https: prefix to protocol-relative URLs
+ */
+function normalizeImageUrl(url: string | undefined): string | null {
+  if (!url) return null;
+  // Handle protocol-relative URLs (starting with //)
+  if (url.startsWith('//')) {
+    return 'https:' + url;
+  }
+  // Return as-is if already has protocol
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url;
+  }
+  return null;
+}
+
+/**
  * Validate if an image URL is suitable for Shopify
  */
 function isValidImageUrl(url: string | undefined): boolean {
-  if (!url) return false;
+  const normalizedUrl = normalizeImageUrl(url);
+  if (!normalizedUrl) return false;
   // Skip data: URIs, empty strings, and invalid URLs
-  if (url.startsWith('data:')) return false;
-  if (url.length < 10) return false;
-  // Must be a proper HTTP(S) URL
-  if (!url.startsWith('http://') && !url.startsWith('https://')) return false;
+  if (normalizedUrl.startsWith('data:')) return false;
+  if (normalizedUrl.length < 10) return false;
   // Must be an image URL (common extensions or CDN patterns)
-  const imagePatterns = ['.jpg', '.jpeg', '.png', '.gif', '.webp', 'alicdn.com', 'ae01.', 'ae04.'];
-  return imagePatterns.some(pattern => url.toLowerCase().includes(pattern));
+  const imagePatterns = ['.jpg', '.jpeg', '.png', '.gif', '.webp', 'alicdn.com', 'ae01.', 'ae04.', 'aliexpress-media.com'];
+  return imagePatterns.some(pattern => normalizedUrl.toLowerCase().includes(pattern));
+}
+
+/**
+ * Get valid, normalized image URL
+ */
+function getValidImageUrl(url: string | undefined): string | null {
+  if (!isValidImageUrl(url)) return null;
+  return normalizeImageUrl(url);
 }
 
 interface ShopifyCreatedProduct {
@@ -275,10 +298,11 @@ async function createShopifyProduct(product: AliexpressProductRecord): Promise<S
     throw new Error('SHOPIFY_ADMIN_API_TOKEN is required');
   }
 
-  // Filter valid images only
+  // Filter valid images only and normalize URLs
   const validImages: Array<{ src: string }> = [];
-  if (isValidImageUrl(product.main_image_url)) {
-    validImages.push({ src: product.main_image_url! });
+  const mainImageUrl = getValidImageUrl(product.main_image_url);
+  if (mainImageUrl) {
+    validImages.push({ src: mainImageUrl });
   }
 
   const productInput: ShopifyProductInput = {
@@ -324,11 +348,12 @@ async function createShopifyProduct(product: AliexpressProductRecord): Promise<S
     ],
   };
 
-  // Add additional images if available (validate each URL)
+  // Add additional images if available (validate and normalize each URL)
   if (product.image_urls && Array.isArray(product.image_urls)) {
     product.image_urls.slice(0, 9).forEach((url: string) => {
-      if (url && url !== product.main_image_url && isValidImageUrl(url)) {
-        productInput.images.push({ src: url });
+      const normalizedUrl = getValidImageUrl(url);
+      if (normalizedUrl && normalizedUrl !== mainImageUrl) {
+        productInput.images.push({ src: normalizedUrl });
       }
     });
   }

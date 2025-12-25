@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import NextLink from "next/link";
 import { usePathname as useNextPathname } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { localeNames, type Locale, priorityLocales, localizedPaths } from "@/i18n/routing";
+import { localeNames, type Locale, allLocales, localizedPaths } from "@/i18n/routing";
 import { useState, useRef, useCallback } from "react";
 import { useCart } from "@/context/cart-context";
 import { useTheme } from "@/context/theme-context";
@@ -48,7 +48,7 @@ export default function Navbar({ locale }: NavbarProps) {
   const getPathForLocale = (newLocale: string) => {
     // Remove current locale prefix if present
     let pathWithoutLocale = fullPathname;
-    for (const loc of priorityLocales) {
+    for (const loc of allLocales) {
       if (fullPathname === `/${loc}` || fullPathname.startsWith(`/${loc}/`)) {
         pathWithoutLocale = fullPathname.slice(loc.length + 1) || '/';
         break;
@@ -220,16 +220,16 @@ export default function Navbar({ locale }: NavbarProps) {
               </button>
 
               {isLocaleOpen && (
-                <div className="absolute right-0 top-full mt-2 w-40 rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 py-2 shadow-xl z-50">
-                  {priorityLocales.map((loc) => (
+                <div className="absolute right-0 top-full mt-2 w-44 max-h-80 overflow-y-auto rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-gray-900 py-2 shadow-xl z-50">
+                  {allLocales.map((loc) => (
                     <NextLink
                       key={loc}
                       href={getPathForLocale(loc)}
                       onClick={() => setIsLocaleOpen(false)}
                       className={`block px-4 py-2 text-sm transition-colors ${
                         loc === locale
-                          ? "text-purple-600 dark:text-purple-400"
-                          : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                          ? "text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20"
+                          : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5"
                       }`}
                     >
                       {localeNames[loc]}
