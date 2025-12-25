@@ -14,6 +14,9 @@ type Props = {
   params: Promise<{ locale: string; handle: string }>;
 };
 
+// Allow dynamic params for localized slugs not pre-generated at build time
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   try {
     const products = await getProducts(100);
