@@ -98,7 +98,7 @@ function ProductContent({
 
   // Structured product details
   const specs = translation?.specifications;
-  const hasSpecs = specs && (specs.style || specs.material || specs.color || specs.process || specs.installation_type || specs.indoor_outdoor);
+  const hasSpecs = specs && Object.keys(specs).length > 0;
   const hasDimensions = translation?.product_size || translation?.package_size || translation?.weight;
   const hasPackageInfo = translation?.package_contents || translation?.origin_country;
 
@@ -252,12 +252,13 @@ function ProductContent({
                   title={t("product.specifications")}
                 />
                 <div className="rounded-lg bg-gray-50 dark:bg-white/5 p-4">
-                  <SpecRow label={t("product.style")} value={specs?.style} />
-                  <SpecRow label={t("product.material")} value={specs?.material} />
-                  <SpecRow label={t("product.color")} value={specs?.color} />
-                  <SpecRow label={t("product.process")} value={specs?.process} />
-                  <SpecRow label={t("product.installationType")} value={specs?.installation_type} />
-                  <SpecRow label={t("product.indoorOutdoor")} value={specs?.indoor_outdoor} />
+                  {Object.entries(specs).map(([key, value]) => (
+                    <SpecRow
+                      key={key}
+                      label={key.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
+                      value={value as string}
+                    />
+                  ))}
                 </div>
               </div>
             )}
@@ -299,8 +300,8 @@ function ProductContent({
               </div>
             )}
 
-            {/* Description (fallback or additional info) */}
-            {description && !hasSpecs && !hasDimensions && (
+            {/* Description */}
+            {description && (
               <div className="mt-8 border-t border-gray-200 dark:border-white/10 pt-8">
                 <SectionHeader
                   icon={
@@ -311,7 +312,7 @@ function ProductContent({
                   title={t("product.description")}
                 />
                 <div
-                  className="prose prose-sm dark:prose-invert max-w-none text-gray-600 dark:text-gray-400"
+                  className="prose prose-sm dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 whitespace-pre-line"
                   dangerouslySetInnerHTML={{ __html: descriptionHtml }}
                 />
               </div>
