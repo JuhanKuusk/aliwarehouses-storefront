@@ -21,6 +21,10 @@ export default function ProductCard({ product, translation, className, use3D = f
   // Use translation if available
   const title = translation?.title || product.title;
   const headline = translation?.headline;
+  const usageDescription = translation?.usage_description;
+
+  // Use localized slug if available, otherwise fallback to Shopify handle
+  const productSlug = translation?.slug || product.handle;
 
   const price = parseFloat(product.priceRange.minVariantPrice.amount).toFixed(2);
   const comparePrice = product.variants.edges[0]?.node.compareAtPrice
@@ -36,7 +40,7 @@ export default function ProductCard({ product, translation, className, use3D = f
 
   // Simple card without 3D effect
   const SimpleCard = () => (
-    <Link href={{ pathname: "/products/[handle]", params: { handle: product.handle }}} className={cn("group block", className)}>
+    <Link href={{ pathname: "/products/[handle]", params: { handle: productSlug }}} className={cn("group block", className)}>
       {/* Image Container */}
       <div className="relative aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-white/10 transition-all group-hover:border-purple-500/50">
         {/* Discount Badge */}
@@ -95,6 +99,12 @@ export default function ProductCard({ product, translation, className, use3D = f
           </p>
         )}
 
+        {usageDescription && !headline && (
+          <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
+            {usageDescription}
+          </p>
+        )}
+
         <div className="flex items-center gap-2">
           <span className="text-sm font-semibold text-gray-900 dark:text-white">€{price}</span>
           {hasDiscount && (
@@ -102,11 +112,22 @@ export default function ProductCard({ product, translation, className, use3D = f
           )}
         </div>
 
-        {product.availableForSale ? (
-          <p className="text-xs text-green-600 dark:text-green-400">{t("product.inStock")}</p>
-        ) : (
-          <p className="text-xs text-red-600 dark:text-red-400">{t("product.outOfStock")}</p>
-        )}
+        <div className="flex items-center gap-2">
+          {product.availableForSale ? (
+            <span className="text-xs text-green-600 dark:text-green-400">{t("product.inStock")}</span>
+          ) : (
+            <span className="text-xs text-red-600 dark:text-red-400">{t("product.outOfStock")}</span>
+          )}
+          {isEuWarehouse && (
+            <span className="text-xs text-purple-600 dark:text-purple-400 flex items-center gap-0.5">
+              <svg className="w-3 h-3" viewBox="0 0 12 8" fill="currentColor">
+                <rect width="12" height="8" fill="#003399"/>
+                <circle cx="6" cy="4" r="2.5" fill="none" stroke="#FFCC00" strokeWidth="0.5"/>
+              </svg>
+              EU
+            </span>
+          )}
+        </div>
       </div>
     </Link>
   );
@@ -115,7 +136,7 @@ export default function ProductCard({ product, translation, className, use3D = f
   const Card3D = () => (
     <CardContainer className={cn("w-full", className)} containerClassName="py-0">
       <CardBody className="relative group/card w-full">
-        <Link href={{ pathname: "/products/[handle]", params: { handle: product.handle }}} className="block">
+        <Link href={{ pathname: "/products/[handle]", params: { handle: productSlug }}} className="block">
           {/* Image Container */}
           <CardItem
             translateZ={50}

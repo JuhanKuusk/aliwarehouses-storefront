@@ -2,11 +2,10 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { getProducts, ShopifyProduct } from "@/lib/shopify";
 import { getTranslationsForProducts, type ProductTranslation } from "@/lib/supabase/translations";
-import Link from "next/link";
-import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import ProductFilters from "@/components/products/ProductFilters";
 import CategoryTiles from "@/components/products/CategoryTiles";
+import ProductCard from "@/components/products/ProductCard";
 import { applyFilters, type FilterState, type SortOption } from "@/lib/utils/filters";
 import type { Locale } from "@/i18n/routing";
 
@@ -105,66 +104,13 @@ function ProductsContent({
             {products.length > 0 ? (
               <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {products.map((product) => {
-                  const price = parseFloat(product.priceRange.minVariantPrice.amount);
-                  const compareAtPrice = product.variants.edges[0]?.node.compareAtPrice?.amount;
-                  const hasDiscount = compareAtPrice && parseFloat(compareAtPrice) > price;
-
-                  // Get translation if available
                   const translation = translationsMap.get(product.handle);
-                  const title = translation?.title || product.title;
-
                   return (
-                    <Link
+                    <ProductCard
                       key={product.id}
-                      href={`/products/${product.handle}`}
-                      className="group"
-                    >
-                      <div className="aspect-square overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-white/10 transition-all group-hover:border-purple-500/50 relative">
-                        {hasDiscount && (
-                          <div className="absolute top-2 left-2 z-10 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                            -{Math.round((1 - price / parseFloat(compareAtPrice!)) * 100)}%
-                          </div>
-                        )}
-                        {product.featuredImage ? (
-                          <Image
-                            src={product.featuredImage.url}
-                            alt={product.featuredImage.altText || title}
-                            fill
-                            className="object-cover transition-transform group-hover:scale-105"
-                            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                          />
-                        ) : (
-                          <div className="flex h-full items-center justify-center text-gray-400 dark:text-gray-600">
-                            No image
-                          </div>
-                        )}
-                      </div>
-                      <div className="mt-3">
-                        <h3 className="text-sm font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-                          {title}
-                        </h3>
-                        {translation?.headline && (
-                          <p className="mt-0.5 text-xs text-purple-600 dark:text-purple-400 line-clamp-1">
-                            {translation.headline}
-                          </p>
-                        )}
-                        <div className="mt-1 flex items-center gap-2">
-                          <span className="text-sm font-bold text-gray-900 dark:text-white">
-                            €{price.toFixed(2)}
-                          </span>
-                          {hasDiscount && (
-                            <span className="text-xs text-gray-500 line-through">
-                              €{parseFloat(compareAtPrice!).toFixed(2)}
-                            </span>
-                          )}
-                        </div>
-                        {product.availableForSale ? (
-                          <p className="mt-1 text-xs text-green-600 dark:text-green-400">{t("product.inStock")}</p>
-                        ) : (
-                          <p className="mt-1 text-xs text-red-600 dark:text-red-400">{t("product.outOfStock")}</p>
-                        )}
-                      </div>
-                    </Link>
+                      product={product}
+                      translation={translation}
+                    />
                   );
                 })}
               </div>
