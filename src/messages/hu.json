@@ -34,7 +34,9 @@
     "allCategories": "Összes kategória",
     "resultsCount": "{count} termék",
     "noResults": "Nincs a szűrőknek megfelelő termék",
-    "clearAll": "Összes szűrő törlése"
+    "clearAll": "Összes szűrő törlése",
+    "search": "Keresés",
+    "searchPlaceholder": "Termékek keresése..."
   },
   "nav": {
     "home": "Fooldal",

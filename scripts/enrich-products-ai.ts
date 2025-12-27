@@ -277,7 +277,7 @@ async function translateWithDeepL(
   return data.translations[0].text;
 }
 
-// Translate using OpenAI for unsupported languages
+// Translate using OpenAI for all languages (DeepL quota exhausted)
 async function translateWithOpenAI(
   text: string,
   targetLocale: string
@@ -288,6 +288,28 @@ async function translateWithOpenAI(
   if (!apiKey) throw new Error("OPENAI_API_KEY is not configured");
 
   const languageNames: Record<string, string> = {
+    en: "English",
+    de: "German",
+    et: "Estonian",
+    fr: "French",
+    ru: "Russian",
+    pt: "Portuguese",
+    es: "Spanish",
+    it: "Italian",
+    nl: "Dutch",
+    pl: "Polish",
+    cs: "Czech",
+    sk: "Slovak",
+    hu: "Hungarian",
+    ro: "Romanian",
+    bg: "Bulgarian",
+    el: "Greek",
+    sv: "Swedish",
+    da: "Danish",
+    fi: "Finnish",
+    lt: "Lithuanian",
+    lv: "Latvian",
+    sl: "Slovenian",
     hr: "Croatian",
     mt: "Maltese",
   };
@@ -330,10 +352,8 @@ async function translateStructuredData(
     return data; // English is source, no translation needed
   }
 
-  const deepLCode = localeToDeepL[targetLocale];
-  const translateFn = deepLCode
-    ? (text: string) => translateWithDeepL(text, deepLCode)
-    : (text: string) => translateWithOpenAI(text, targetLocale);
+  // Use OpenAI for all translations (DeepL key needs activation time)
+  const translateFn = (text: string) => translateWithOpenAI(text, targetLocale);
 
   // Translate all text fields in parallel
   const [
@@ -544,10 +564,7 @@ async function main() {
     console.error("ERROR: OPENAI_API_KEY is required");
     process.exit(1);
   }
-  if (!process.env.DEEPL_API_KEY) {
-    console.error("ERROR: DEEPL_API_KEY is required");
-    process.exit(1);
-  }
+  // DeepL not required - using OpenAI for all translations
 
   // Fetch products
   console.log("Fetching products from Shopify...");

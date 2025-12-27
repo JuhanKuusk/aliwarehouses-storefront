@@ -34,7 +34,9 @@
     "allCategories": "Všetky kategórie",
     "resultsCount": "{count} produktov",
     "noResults": "Žiadne produkty nezodpovedajú vašim filtrom",
-    "clearAll": "Vymazať všetky filtre"
+    "clearAll": "Vymazať všetky filtre",
+    "search": "Hľadať",
+    "searchPlaceholder": "Hľadať produkty..."
   },
   "nav": {
     "home": "Domov",

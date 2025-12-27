@@ -34,7 +34,9 @@
     "allCategories": "Vse kategorije",
     "resultsCount": "{count} izdelkov",
     "noResults": "Ni izdelkov, ki bi ustrezali vašim filtrom",
-    "clearAll": "Počisti vse filtre"
+    "clearAll": "Počisti vse filtre",
+    "search": "Iskanje",
+    "searchPlaceholder": "Iskanje izdelkov..."
   },
   "nav": {
     "home": "Domov",

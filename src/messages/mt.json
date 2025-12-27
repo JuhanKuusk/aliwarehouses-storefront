@@ -34,7 +34,9 @@
     "allCategories": "Il-kategoriji kollha",
     "resultsCount": "{count} prodotti",
     "noResults": "L-ebda prodott ma jaqbel mal-filtri tiegħek",
-    "clearAll": "Ħassar il-filtri kollha"
+    "clearAll": "Ħassar il-filtri kollha",
+    "search": "Fittex",
+    "searchPlaceholder": "Fittex prodotti..."
   },
   "nav": {
     "home": "Paġna Ewlenija",

@@ -34,7 +34,9 @@
     "allCategories": "Kõik kategooriad",
     "resultsCount": "{count} toodet",
     "noResults": "Filtritele vastavaid tooteid ei leitud",
-    "clearAll": "Tühjenda kõik filtrid"
+    "clearAll": "Tühjenda kõik filtrid",
+    "search": "Otsi",
+    "searchPlaceholder": "Otsi tooteid..."
   },
   "nav": {
     "home": "Avaleht",

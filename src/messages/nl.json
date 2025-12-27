@@ -34,7 +34,9 @@
     "allCategories": "Alle categorieën",
     "resultsCount": "{count} producten",
     "noResults": "Geen producten komen overeen met je filters",
-    "clearAll": "Alle filters wissen"
+    "clearAll": "Alle filters wissen",
+    "search": "Zoeken",
+    "searchPlaceholder": "Producten zoeken..."
   },
   "nav": {
     "home": "Home",

@@ -34,7 +34,9 @@
     "allCategories": "Toate categoriile",
     "resultsCount": "{count} produse",
     "noResults": "Niciun produs nu corespunde filtrelor tale",
-    "clearAll": "Șterge toate filtrele"
+    "clearAll": "Șterge toate filtrele",
+    "search": "Căutare",
+    "searchPlaceholder": "Căutare produse..."
   },
   "nav": {
     "home": "Acasa",

@@ -34,7 +34,9 @@
     "allCategories": "Alle Kategorien",
     "resultsCount": "{count} Produkte",
     "noResults": "Keine Produkte entsprechen Ihren Filtern",
-    "clearAll": "Alle Filter löschen"
+    "clearAll": "Alle Filter löschen",
+    "search": "Suche",
+    "searchPlaceholder": "Produkte suchen..."
   },
   "nav": {
     "home": "Startseite",

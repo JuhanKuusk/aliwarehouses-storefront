@@ -11,6 +11,7 @@ export interface FilterState {
   inStockOnly: boolean;
   sort: SortOption;
   category: string;
+  search: string;
 }
 
 // Utility function to filter and sort products
@@ -18,11 +19,20 @@ export function applyFilters<T extends {
   priceRange: { minVariantPrice: { amount: string } };
   availableForSale: boolean;
   tags?: string[];
+  title?: string;
 }>(
   products: T[],
   filters: FilterState
 ): T[] {
   let filtered = [...products];
+
+  // Filter by search
+  if (filters.search) {
+    const searchLower = filters.search.toLowerCase();
+    filtered = filtered.filter(
+      (p) => p.title?.toLowerCase().includes(searchLower)
+    );
+  }
 
   // Filter by price
   if (filters.minPrice) {

@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import ProductFilters from "@/components/products/ProductFilters";
+import CategoryTiles from "@/components/products/CategoryTiles";
 import { applyFilters, type FilterState, type SortOption } from "@/lib/utils/filters";
 import type { Locale } from "@/i18n/routing";
 
@@ -41,6 +42,7 @@ export default async function ProductsPage({ params, searchParams }: Props) {
     inStockOnly: resolvedSearchParams.inStock === "true",
     sort: ((resolvedSearchParams.sort as string) || "featured") as SortOption,
     category: (resolvedSearchParams.category as string) || "",
+    search: (resolvedSearchParams.search as string) || "",
   };
 
   // Apply filters server-side
@@ -56,6 +58,7 @@ export default async function ProductsPage({ params, searchParams }: Props) {
       locale={locale as Locale}
       categories={categories}
       totalCount={filteredProducts.length}
+      selectedCategory={filters.category}
     />
   );
 }
@@ -66,12 +69,14 @@ function ProductsContent({
   locale,
   categories,
   totalCount,
+  selectedCategory,
 }: {
   products: Awaited<ReturnType<typeof getProducts>>;
   translationsMap: Map<string, ProductTranslation>;
   locale: Locale;
   categories: string[];
   totalCount: number;
+  selectedCategory: string;
 }) {
   const t = useTranslations();
 
@@ -84,7 +89,12 @@ function ProductsContent({
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">{t("nav.products")}</h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400">{t("common.tagline")}</p>
 
-        <div className="mt-8 lg:grid lg:grid-cols-4 lg:gap-8">
+        {/* Category Tiles */}
+        <div className="mt-8">
+          <CategoryTiles categories={categories} selectedCategory={selectedCategory} />
+        </div>
+
+        <div className="lg:grid lg:grid-cols-4 lg:gap-8">
           {/* Filters Sidebar */}
           <div className="lg:col-span-1">
             <ProductFilters categories={categories} productCount={totalCount} />

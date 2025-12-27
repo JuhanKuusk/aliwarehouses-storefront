@@ -34,7 +34,9 @@
     "allCategories": "Всички категории",
     "resultsCount": "{count} продукта",
     "noResults": "Няма продукти, отговарящи на филтрите",
-    "clearAll": "Изчисти всички филтри"
+    "clearAll": "Изчисти всички филтри",
+    "search": "Търсене",
+    "searchPlaceholder": "Търсене на продукти..."
   },
   "nav": {
     "home": "Nachalo",

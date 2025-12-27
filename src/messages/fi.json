@@ -34,7 +34,9 @@
     "allCategories": "Kaikki kategoriat",
     "resultsCount": "{count} tuotetta",
     "noResults": "Ei suodattimia vastaavia tuotteita",
-    "clearAll": "Tyhjennä kaikki suodattimet"
+    "clearAll": "Tyhjennä kaikki suodattimet",
+    "search": "Hae",
+    "searchPlaceholder": "Hae tuotteita..."
   },
   "nav": {
     "home": "Etusivu",

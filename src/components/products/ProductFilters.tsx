@@ -29,6 +29,7 @@ export default function ProductFilters({ categories = [], productCount = 0 }: Pr
     inStockOnly: searchParams.get("inStock") === "true",
     sort: (searchParams.get("sort") as SortOption) || "featured",
     category: searchParams.get("category") || "",
+    search: searchParams.get("search") || "",
   };
 
   const [filters, setFilters] = useState<FilterState>(currentFilters);
@@ -41,6 +42,7 @@ export default function ProductFilters({ categories = [], productCount = 0 }: Pr
 
       const params = new URLSearchParams();
 
+      if (updatedFilters.search) params.set("search", updatedFilters.search);
       if (updatedFilters.minPrice) params.set("minPrice", updatedFilters.minPrice);
       if (updatedFilters.maxPrice) params.set("maxPrice", updatedFilters.maxPrice);
       if (updatedFilters.inStockOnly) params.set("inStock", "true");
@@ -65,6 +67,7 @@ export default function ProductFilters({ categories = [], productCount = 0 }: Pr
       inStockOnly: false,
       sort: "featured",
       category: "",
+      search: "",
     };
     setFilters(defaultFilters);
     startTransition(() => {
@@ -73,6 +76,7 @@ export default function ProductFilters({ categories = [], productCount = 0 }: Pr
   }, [pathname, router]);
 
   const hasActiveFilters =
+    filters.search ||
     filters.minPrice ||
     filters.maxPrice ||
     filters.inStockOnly ||
@@ -122,6 +126,35 @@ export default function ProductFilters({ categories = [], productCount = 0 }: Pr
             {t("common.loading")}
           </div>
         )}
+
+        {/* Search */}
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            {t("filters.search")}
+          </label>
+          <div className="relative">
+            <input
+              type="text"
+              placeholder={t("filters.searchPlaceholder")}
+              value={filters.search}
+              onChange={(e) => updateFilters({ search: e.target.value })}
+              className="w-full pl-10 pr-3 py-2 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-white/10 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            />
+            <svg
+              className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
+        </div>
 
         {/* Sort */}
         <div className="mb-4">

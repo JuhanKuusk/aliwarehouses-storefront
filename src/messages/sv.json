@@ -34,7 +34,9 @@
     "allCategories": "Alla kategorier",
     "resultsCount": "{count} produkter",
     "noResults": "Inga produkter matchar dina filter",
-    "clearAll": "Rensa alla filter"
+    "clearAll": "Rensa alla filter",
+    "search": "Sök",
+    "searchPlaceholder": "Sök produkter..."
   },
   "nav": {
     "home": "Hem",

@@ -34,7 +34,9 @@
     "allCategories": "Alle kategorier",
     "resultsCount": "{count} produkter",
     "noResults": "Ingen produkter matcher dine filtre",
-    "clearAll": "Ryd alle filtre"
+    "clearAll": "Ryd alle filtre",
+    "search": "Søg",
+    "searchPlaceholder": "Søg produkter..."
   },
   "nav": {
     "home": "Hjem",

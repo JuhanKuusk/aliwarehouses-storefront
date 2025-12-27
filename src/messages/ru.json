@@ -34,7 +34,9 @@
     "allCategories": "Все категории",
     "resultsCount": "{count} товаров",
     "noResults": "Нет товаров, соответствующих фильтрам",
-    "clearAll": "Очистить все фильтры"
+    "clearAll": "Очистить все фильтры",
+    "search": "Поиск",
+    "searchPlaceholder": "Поиск товаров..."
   },
   "nav": {
     "home": "Главная",

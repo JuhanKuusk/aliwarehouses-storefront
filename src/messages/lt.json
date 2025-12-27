@@ -34,7 +34,9 @@
     "allCategories": "Visos kategorijos",
     "resultsCount": "{count} produktai",
     "noResults": "Nėra produktų, atitinkančių filtrus",
-    "clearAll": "Išvalyti visus filtrus"
+    "clearAll": "Išvalyti visus filtrus",
+    "search": "Ieškoti",
+    "searchPlaceholder": "Ieškoti produktų..."
   },
   "nav": {
     "home": "Pradžia",

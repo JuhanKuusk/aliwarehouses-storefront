@@ -34,7 +34,9 @@
     "allCategories": "Visas kategorijas",
     "resultsCount": "{count} produkti",
     "noResults": "Nav produktu, kas atbilst filtriem",
-    "clearAll": "Notīrīt visus filtrus"
+    "clearAll": "Notīrīt visus filtrus",
+    "search": "Meklēt",
+    "searchPlaceholder": "Meklēt produktus..."
   },
   "nav": {
     "home": "Sākums",
