@@ -96,15 +96,15 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
         )}
       </div>
 
-      {/* Thumbnails */}
+      {/* Thumbnails - Scrollable row */}
       {images.length > 1 && (
-        <div className="grid grid-cols-5 gap-3">
-          {images.slice(0, 5).map((image, index) => (
+        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700">
+          {images.map((image, index) => (
             <button
               key={index}
               onClick={() => setSelectedIndex(index)}
               className={cn(
-                "relative aspect-square overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-900 transition-all",
+                "relative flex-shrink-0 w-16 h-16 overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-900 transition-all",
                 selectedIndex === index
                   ? "ring-2 ring-purple-500 ring-offset-2 ring-offset-white dark:ring-offset-black"
                   : "border border-gray-200 dark:border-white/10 hover:border-purple-500/50"
@@ -114,28 +114,42 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
                 src={image.url}
                 alt={image.altText || `${title} ${index + 1}`}
                 fill
-                sizes="100px"
+                sizes="64px"
                 className="object-cover"
               />
             </button>
           ))}
-          {images.length > 5 && (
-            <button
-              onClick={() => setSelectedIndex(5)}
-              className="relative aspect-square overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-white/10 hover:border-purple-500/50 transition-all"
-            >
-              <div className="absolute inset-0 flex items-center justify-center bg-black/60 text-white text-sm font-medium">
-                +{images.length - 5}
-              </div>
-              <Image
-                src={images[5].url}
-                alt={`${title} more`}
-                fill
-                sizes="100px"
-                className="object-cover"
-              />
-            </button>
-          )}
+        </div>
+      )}
+
+      {/* All Images Grid - Below gallery */}
+      {images.length > 1 && (
+        <div className="mt-6 pt-6 border-t border-gray-200 dark:border-white/10">
+          <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+            All Images ({images.length})
+          </h4>
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+            {images.map((image, index) => (
+              <button
+                key={index}
+                onClick={() => setSelectedIndex(index)}
+                className={cn(
+                  "relative aspect-square overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-900 transition-all",
+                  selectedIndex === index
+                    ? "ring-2 ring-purple-500"
+                    : "border border-gray-200 dark:border-white/10 hover:border-purple-500/50 hover:scale-105"
+                )}
+              >
+                <Image
+                  src={image.url}
+                  alt={image.altText || `${title} ${index + 1}`}
+                  fill
+                  sizes="(max-width: 640px) 33vw, 25vw"
+                  className="object-cover"
+                />
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </div>
