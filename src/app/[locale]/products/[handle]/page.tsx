@@ -89,6 +89,16 @@ function SectionHeader({ icon, title }: { icon: React.ReactNode; title: string }
   );
 }
 
+// Sanitize HTML to remove inline color/background styles that break dark mode
+function sanitizeHtml(html: string): string {
+  return html
+    .replace(/style="[^"]*"/gi, '') // Remove all inline styles
+    .replace(/color="[^"]*"/gi, '') // Remove color attributes
+    .replace(/bgcolor="[^"]*"/gi, '') // Remove bgcolor attributes
+    .replace(/<font[^>]*>/gi, '') // Remove font tags
+    .replace(/<\/font>/gi, '');
+}
+
 function ProductContent({
   product,
   translation,
@@ -323,7 +333,7 @@ function ProductContent({
                 />
                 <div
                   className="prose prose-sm dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 whitespace-pre-line"
-                  dangerouslySetInnerHTML={{ __html: descriptionHtml }}
+                  dangerouslySetInnerHTML={{ __html: sanitizeHtml(descriptionHtml) }}
                 />
               </div>
             )}

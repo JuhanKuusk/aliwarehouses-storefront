@@ -176,9 +176,12 @@ Product Description: ${product.description || product.descriptionHtml}
 Tags: ${product.tags?.join(", ") || "none"}
 Price: €${parseFloat(product.priceRange.minVariantPrice.amount).toFixed(2)}
 
+IMPORTANT: The product title may be in ANY language (German, Spanish, Portuguese, Chinese, etc.).
+You MUST translate all content to English regardless of the source language.
+
 Extract and return this JSON structure (use empty string "" if information is not available):
 {
-  "title": "Product title (keep original or improve slightly)",
+  "title": "Product title translated to English. Create a clear, SEO-friendly English title.",
   "headline": "Short catchy marketing tagline (5-10 words)",
   "usage_description": "Where and how to use this product (1-2 sentences)",
   "specifications": {
@@ -277,7 +280,35 @@ async function translateWithDeepL(
   return data.translations[0].text;
 }
 
-// Translate using OpenAI for all languages (DeepL quota exhausted)
+// Language names for translation prompts
+const languageNames: Record<string, string> = {
+  en: "English",
+  de: "German",
+  et: "Estonian",
+  fr: "French",
+  ru: "Russian",
+  pt: "Portuguese",
+  es: "Spanish",
+  it: "Italian",
+  nl: "Dutch",
+  pl: "Polish",
+  cs: "Czech",
+  sk: "Slovak",
+  hu: "Hungarian",
+  ro: "Romanian",
+  bg: "Bulgarian",
+  el: "Greek",
+  sv: "Swedish",
+  da: "Danish",
+  fi: "Finnish",
+  lt: "Lithuanian",
+  lv: "Latvian",
+  sl: "Slovenian",
+  hr: "Croatian",
+  mt: "Maltese",
+};
+
+// Translate using OpenAI with auto language detection
 async function translateWithOpenAI(
   text: string,
   targetLocale: string
@@ -287,32 +318,7 @@ async function translateWithOpenAI(
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) throw new Error("OPENAI_API_KEY is not configured");
 
-  const languageNames: Record<string, string> = {
-    en: "English",
-    de: "German",
-    et: "Estonian",
-    fr: "French",
-    ru: "Russian",
-    pt: "Portuguese",
-    es: "Spanish",
-    it: "Italian",
-    nl: "Dutch",
-    pl: "Polish",
-    cs: "Czech",
-    sk: "Slovak",
-    hu: "Hungarian",
-    ro: "Romanian",
-    bg: "Bulgarian",
-    el: "Greek",
-    sv: "Swedish",
-    da: "Danish",
-    fi: "Finnish",
-    lt: "Lithuanian",
-    lv: "Latvian",
-    sl: "Slovenian",
-    hr: "Croatian",
-    mt: "Maltese",
-  };
+  const targetLanguage = languageNames[targetLocale] || targetLocale;
 
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -325,7 +331,16 @@ async function translateWithOpenAI(
       messages: [
         {
           role: "system",
-          content: `Translate the following text to ${languageNames[targetLocale] || targetLocale}. Return ONLY the translation, no explanation.`,
+          content: `You are a professional translator for e-commerce product content.
+
+TASK: Translate the following text to ${targetLanguage}.
+
+IMPORTANT RULES:
+1. AUTO-DETECT the source language (it could be English, German, Spanish, Portuguese, Chinese, or any other language)
+2. Translate accurately to ${targetLanguage}, preserving the meaning
+3. Keep product names, brand names, and technical terms appropriate for the target market
+4. Return ONLY the translated text, no explanations or notes
+5. If the text is already in ${targetLanguage}, still return it (possibly improved for clarity)`,
         },
         { role: "user", content: text },
       ],
@@ -424,7 +439,7 @@ async function saveTranslation(
   data: StructuredProductData,
   locale: string
 ): Promise<void> {
-  const slug = generateSlug(data.title, locale);
+  const slug = generateSlug(data.title, locale, product.id);
 
   const record = {
     shopify_product_id: product.id,
@@ -498,35 +513,73 @@ function transliterate(text: string, locale: string): string {
   return result;
 }
 
-function generateSlug(title: string, locale: string): string {
+function generateSlug(title: string, locale: string, productId?: string): string {
   // First transliterate non-Latin scripts
   let slug = transliterate(title, locale);
 
-  return slug
+  slug = slug
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "") // Remove accents
     .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")
     .replace(/^-|-$/g, "") // Remove leading/trailing dashes
-    .slice(0, 100);
+    .slice(0, 80); // Shorter to leave room for suffix
+
+  // Add unique suffix from product ID to prevent slug collisions
+  if (productId) {
+    // Extract numeric part from Shopify GID or use last 6 chars
+    const idMatch = productId.match(/(\d+)$/);
+    const suffix = idMatch ? idMatch[1].slice(-6) : productId.slice(-6);
+    slug = `${slug}-${suffix}`;
+  }
+
+  return slug;
 }
 
 // ============ MAIN ============
 
+// Get existing translations for a product
+async function getExistingTranslations(handle: string): Promise<Set<string>> {
+  const { data, error } = await supabase
+    .from("product_translations")
+    .select("locale")
+    .eq("shopify_handle", handle);
+
+  if (error || !data) return new Set();
+  return new Set(data.map((t: { locale: string }) => t.locale));
+}
+
 async function processProduct(
   product: ShopifyProduct,
-  dryRun: boolean
-): Promise<void> {
+  dryRun: boolean,
+  skipExisting: boolean = true
+): Promise<{ skipped: boolean; localesProcessed: number }> {
   console.log(`\nProcessing: ${product.handle}`);
+
+  // Check existing translations
+  const existingLocales = skipExisting ? await getExistingTranslations(product.handle) : new Set<string>();
+  const missingLocales = ALL_LOCALES.filter(locale => !existingLocales.has(locale));
+
+  if (missingLocales.length === 0 && skipExisting) {
+    console.log("  All 24 translations exist - skipping");
+    return { skipped: true, localesProcessed: 0 };
+  }
+
+  if (skipExisting && existingLocales.size > 0) {
+    console.log(`  Found ${existingLocales.size}/24 existing translations, processing ${missingLocales.length} missing locales`);
+  }
 
   // Step 1: Extract structured data using OpenAI
   console.log("  Extracting structured data with AI...");
   const structuredData = await extractStructuredData(product);
   console.log("  Extracted:", structuredData.headline);
 
-  // Step 2: Translate to all locales
-  for (const locale of ALL_LOCALES) {
+  // Step 2: Translate to missing locales only
+  const localesToProcess = skipExisting ? missingLocales : [...ALL_LOCALES];
+  let localesProcessed = 0;
+
+  for (const locale of localesToProcess) {
     console.log(`  Translating to ${locale}...`);
 
     try {
@@ -539,12 +592,16 @@ async function processProduct(
         console.log(`    [DRY RUN] Would save ${locale}: ${translatedData.title}`);
       }
 
+      localesProcessed++;
+
       // Small delay to avoid rate limiting
       await new Promise((resolve) => setTimeout(resolve, 200));
     } catch (error) {
       console.error(`    Error translating to ${locale}:`, error);
     }
   }
+
+  return { skipped: false, localesProcessed };
 }
 
 async function main() {
@@ -582,25 +639,34 @@ async function main() {
 
   // Process each product
   let processed = 0;
+  let skipped = 0;
   let errors = 0;
+  let totalLocalesProcessed = 0;
 
   for (const product of products) {
     try {
-      await processProduct(product, dryRun);
-      processed++;
+      const result = await processProduct(product, dryRun, true);
+      if (result.skipped) {
+        skipped++;
+      } else {
+        processed++;
+        totalLocalesProcessed += result.localesProcessed;
+      }
     } catch (error) {
       console.error(`Error processing ${product.handle}:`, error);
       errors++;
     }
 
     // Delay between products to avoid rate limits
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 500));
   }
 
   console.log("\n" + "=".repeat(60));
   console.log("COMPLETE");
   console.log("=".repeat(60));
   console.log(`Processed: ${processed}`);
+  console.log(`Skipped (already complete): ${skipped}`);
+  console.log(`Locales processed: ${totalLocalesProcessed}`);
   console.log(`Errors: ${errors}`);
 }
 

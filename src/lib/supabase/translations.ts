@@ -51,14 +51,15 @@ export async function getTranslation(handle: string, locale: string): Promise<Pr
     .select("*")
     .eq("shopify_handle", handle)
     .eq("locale", locale)
-    .single();
+    .order("updated_at", { ascending: false })
+    .limit(1);
 
   if (error) {
     console.error("Error fetching translation:", error);
     return null;
   }
 
-  return data;
+  return data?.[0] || null;
 }
 
 // Get translation by localized slug and locale
@@ -68,14 +69,15 @@ export async function getTranslationBySlug(slug: string, locale: string): Promis
     .select("*")
     .eq("slug", slug)
     .eq("locale", locale)
-    .single();
+    .order("updated_at", { ascending: false })
+    .limit(1);
 
   if (error) {
     console.error("Error fetching translation by slug:", error);
     return null;
   }
 
-  return data;
+  return data?.[0] || null;
 }
 
 // Get all translations for a product
